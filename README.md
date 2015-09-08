@@ -16,7 +16,7 @@ Remember to add exec permissions to all scripts!
 
 Description of scripts
 =============================================
-* [HoN](https://github.com/adgellida/ubuntuScripts/tree/master/hon)
+* [HoN](https://github.com/adgellida/ubuntuScripts/tree/master/HoN)
 
 Fix problems at game start for [Hon](http://www.heroesofnewerth.com/)
 
@@ -39,9 +39,9 @@ Thanks to [Andrew](https://plus.google.com/u/0/112555004333838485342/?rel=author
 
 Various scripts to clean and improve
 
-* [autostart a program](https://github.com/adgellida/ubuntuScripts/blob/master/auto%20start%20a%20program)
+* [autostart a program](https://github.com/adgellida/ubuntuScripts/blob/master/autostart%20a%20program)
 
-* [dirsyncpro launch](https://github.com/adgellida/ubuntuScripts/blob/master/dirsync%20launch)
+* [dirsyncpro launch](https://github.com/adgellida/ubuntuScripts/blob/master/dirsyncpro%20launch)
 
 Launchs [dirsyncpro](http://www.dirsyncpro.org/) if you have installed java 8 instead of 7 or 6.
 
@@ -53,7 +53,7 @@ Very recommended.
 
 Needs implementation and testing.
 
-* [git gui](https://github.com/adgellida/ubuntuScripts/blob/master/guit%20gui)
+* [git gui](https://github.com/adgellida/ubuntuScripts/blob/master/git%20gui)
 
 Runs git gui. Very simple.
 
