@@ -1,0 +1,15 @@
+#For example ubuntu-sdk
+#Way 1
+sudo apt-get autoremove ubuntu-sdk
+sudo apt-get --purge remove ubuntu-sdk
+sudo apt-get autoclean
+sudo apt-get autoremove
+sudo apt-get -f install
+
+#Way 2
+#with dependencies
+sudo apt-get remove --auto-remove ubuntu-sdk
+#with config/data
+sudo apt-get purge ubuntu-sdk
+#the same
+sudo apt-get purge --auto-remove ubuntu-sdk

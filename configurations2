@@ -1,0 +1,58 @@
+#!/bin/bash
+########configurations
+
+###################################################Install the latest stable kernel v3.15.6 - ANCIENT
+
+#wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.15.6-utopic/linux-headers-3.15.6-031506_3.15.6-031506.201407172034_all.deb
+
+#wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.15.6-utopic/linux-headers-3.15.6-031506-generic_3.15.6-031506.201407172034_amd64.deb
+
+#wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.15.6-utopic/linux-image-3.15.6-031506-generic_3.15.6-031506.201407172034_amd64.deb
+
+#sudo dpkg -i linux-headers-3.15*.deb linux-image-3.15*.deb
+
+#rm linux-*.deb
+
+###################################################Install the latest stable kernel v3.18.1
+
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.1-vivid/linux-headers-3.18.1-031801_3.18.1-031801.201412170637_all.deb
+
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.1-vivid/linux-headers-3.18.1-031801-generic_3.18.1-031801.201412170637_amd64.deb
+
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.1-vivid/linux-image-3.18.1-031801-generic_3.18.1-031801.201412170637_amd64.deb
+
+sudo dpkg -i linux-*.deb
+
+rm linux-*.deb
+
+sudo reboot
+
+###################################################Disable guest account & remote login
+#http://www.howtogeek.com/117994/how-to-disable-ubuntus-guest-session-account
+#http://robersoft.blogcindario.com/2011/10/00036-deshabilitar-la-cuenta-de-invitado-en-ubuntu-11-10-oneiric-ocelot.html
+#http://linux-hispano.blogspot.com.es/2013/10/eliminar-cuenta-invitado-e-inicio-de.html
+
+sudo sh -c 'echo "
+
+allow-guest=false
+greeter-show-remote-login=false
+
+#" >> /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf'	ANCIENT
+" >> /etc/lightdm/lightdm.conf'
+
+#sudo restart lightdm
+
+###################################################Disable wireless & bluetooth on startup
+
+sudo sh -c 'echo "
+
+rfkill block bluetooth
+rfkill block wifi
+
+" >> /etc/rc.local'
+
+###################################################Less brightness ####WORKING
+
+#sudo sh -c 'echo "
+
+#" >> /xxx'

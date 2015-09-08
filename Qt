@@ -1,0 +1,15 @@
+#https://qt-project.org/wiki/Install_Qt_5_on_Ubuntu																										
+#http://www.wikihow.com/Install-Qt-SDK-on-Ubuntu-Linux
+##extra for 5.3.2
+sudo apt-get -y install "^libxcb.*" libx11-xcb-dev libglu1-mesa-dev libxrender-dev ### unofficial																												
+sudo apt-get -y install libgl1-mesa-dev libglu1-mesa-dev ### to test																						
+sudo -s chmod u+x qt-opensource-linux-x64-5.3.2.run																											
+sudo -s ./qt-opensource-linux-x64-5.3.2.run -style cleanlooks																												
+																														
+sudo -s chmod -R 777 /opt/Qt5.3.2																												
+sudo -s chmod -R 777 /home/usuario/.config/QtProject																												
+																														
+sudo -s pluma /etc/profile																												
+PATH=/opt/Qt5.3.2/5.3.2/gcc/bin:$PATH																												
+export PATH																												
+. /etc/profile

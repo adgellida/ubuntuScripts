@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo mv /etc/apt/trusted.gpg.d/ /etc/apt/trusted.gpg.d.backup
+sudo mkdir /etc/apt/trusted.gpg.d
+sudo chmod 755 /etc/apt/trusted.gpg.d
+
+#Then, for each key you need:
+
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
+
+#or best...
+
+#sudo launchpad-getkeys

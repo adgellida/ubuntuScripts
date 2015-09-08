@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo Pushing changes to ubuntupackages
+cd "/home/usuario/Proyectos/github/ubuntupackages"
+git add .
+git add -u
+git commit -m 'Updating'
+git push -u origin master

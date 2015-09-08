@@ -1,0 +1,28 @@
+#This is solution how to fix no splash screen in Ubuntu after nvidia proprietary driver installation. It's no matter what Ubuntu version you use, it should work anyway.
+
+#http://askubuntu.com/questions/362722/how-to-fix-splash-screen-in-all-ubuntu-releases
+
+Open your terminal and type
+
+sudo apt-get install v86d
+
+Then
+
+sudo pluma /etc/default/grub
+
+Find this line
+
+#GRUB_GFXMODE=640x480
+and change for this one (of course choose your resolution)
+
+GRUB_GFXMODE=1440x900x24          /  1024x768-24
+GRUB_GFXPAYLOAD_LINUX=keep
+
+Save file and type in terminal
+
+echo FRAMEBUFFER=y | sudo tee /etc/initramfs-tools/conf.d/splash
+sudo update-initramfs -u
+sudo update-grub2
+
+It's worked for me in all Ubuntu versions.
+Give it a try :)

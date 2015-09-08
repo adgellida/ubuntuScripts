@@ -1,0 +1,12 @@
+#/bin/bash
+
+#to execute...
+#sudo bash /path/to/cleanKernels.sh
+
+sudo ls /boot/ | grep vmlinuz | sed 's@vmlinuz-@linux-image-@g' | grep -v `uname -r` > /tmp/kernelList
+for I in `cat /tmp/kernelList`
+do
+sudo aptitude remove $I
+done
+sudo rm -f /tmp/kernelList
+sudo update-grub

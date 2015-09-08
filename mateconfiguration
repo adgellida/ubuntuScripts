@@ -1,0 +1,41 @@
+#!/bin/bash
+########mate configuration
+
+#Not neccesarary if you have mate for default on your distro
+
+# Set default session in ubuntu for new users - mate - http://askubuntu.com/questions/456766/how-to-set-default-session-in-ubuntu-14-04-lts
+#sudo pluma /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
+#Replace "ubuntu" with "mate.desktop" or "mate".
+
+# Folders:
+xdg-mime default caja-folder-handler.desktop inode/directory
+# SSH sites:
+xdg-mime default caja-folder-handler.desktop x-scheme-handler/ssh
+#mateconftool-2 --set --type=bool /desktop/mate/url-handlers/ssh/enabled true			 - ERROR BY NOW
+#mateconftool-2 --set --type=string /desktop/mate/url-handlers/ssh/command 'caja "%s"'   - ERROR BY NOW
+#mateconftool-2 --set --type=bool /desktop/mate/url-handlers/ssh/needs_terminal false    - ERROR BY NOW
+# FTP sites:
+xdg-mime default caja-folder-handler.desktop x-scheme-handler/ftp
+#mateconftool-2 --set --type=bool /desktop/mate/url-handlers/ftp/enabled true            - ERROR BY NOW
+#mateconftool-2 --set --type=string /desktop/mate/url-handlers/ftp/command 'caja "%s"'	 - ERROR BY NOW
+#mateconftool-2 --set --type=bool /desktop/mate/url-handlers/ftp/needs_terminal false    - ERROR BY NOW
+# Images:
+xdg-mime default eom.desktop image/bmp
+xdg-mime default eom.desktop image/gif
+xdg-mime default eom.desktop image/jpeg
+xdg-mime default eom.desktop image/x-pcx
+xdg-mime default eom.desktop image/png
+xdg-mime default eom.desktop image/tiff
+# Plain text:
+xdg-mime default pluma.desktop text/plain
+xdg-mime default pluma.desktop text/x-log
+xdg-mime default pluma.desktop application/x-perl
+xdg-mime default pluma.desktop application/javascript
+xdg-mime default pluma.desktop application/rdf+xml
+# If you want for Wine plain text files:
+xdg-mime default pluma.desktop application/x-wine-extension-ini
+xdg-mime default pluma.desktop application/x-wine-extension-vbs
+xdg-mime default pluma.desktop text/x-csrc
+xdg-mime default pluma.desktop application/x-wine-extension-inf
+# PDF:
+xdg-mime default atril.desktop application/pdf

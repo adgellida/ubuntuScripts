@@ -1,0 +1,52 @@
+#!/bin/bash
+########configurations
+
+####Solve libreoffice size tabs - http://elementaryes.tumblr.com/post/52447857191/como-solucionar-las-pestanas-pequenas-en
+
+##mate version
+#sudo pluma /usr/share/themes/Ambiant-MATE/gtk-2.0/gtkrc
+
+#Change to
+
+#GtkScrollbar::slider-width = 17
+
+####Add user to group scanner
+
+#sudo adduser usuario scanner
+
+####Disable amazon lens - http://www.webupd8.org/2013/10/how-to-disable-amazon-shopping.html
+##Step 1
+#Open Dash, go to the Applications lens
+#(either do it manually using your mouse or use the Super + A keyboard shortcut),
+#click "Filter results" on the right and under "Type", select "Dash plugins".
+#All the Dash search plugins (scopes) should be listed
+
+##Step 2
+#gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
+
+####Enable hibernation - http://tutorfreebr.blogspot.com.es/2013/10/como-ativar-o-modo-de-hibernacao-no.html - http://www.taringa.net/posts/linux/14651627/Activar-funcion-Hibernar-en-Ubuntu-12-04-Precise-Pangoli.html
+
+sudo sh -c 'echo "
+
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate
+ResultActive=yes
+
+" >> /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla'
+
+####Enable Progress Fancy in Apt & apt-get - http://www.omgubuntu.co.uk/2014/04/how-to-enable-apt-terminal-progress-bar
+
+#Works
+#echo -e 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
+
+#Alternative 1
+#sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+
+#Alternative 2
+##sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf/99progressbar

@@ -1,0 +1,45 @@
+#Qt Linux
+
+echo "Select a Qt version to download\n" !Choose 1)online x64 2)linux x64 3)android x64
+read electionChoosed
+
+case ${electionChoosed} in
+	1) echo "You selected online" 
+	urlQt=http://download.qt-project.org/official_releases/online_installers/qt-opensource-linux-x64-1.6.0-5-online.run
+	fileQt=qt-opensource-linux-x64-1.6.0-5-online.run
+	;;
+	2) echo "You selected linux" 
+	urlQt=http://download.qt-project.org/official_releases/qt/5.3/5.3.2/qt-opensource-linux-x64-5.3.2.run
+	fileQt=qt-opensource-linux-x64-5.3.2.run
+	;;
+	3) echo "You selected android" 
+	urlQt=http://download.qt-project.org/official_releases/qt/5.3/5.3.2/qt-opensource-linux-x64-android-5.3.2.run
+	fileQt=qt-opensource-linux-x64-android-5.3.2.run
+	;;
+	*) echo "INVALID NUMBER!" ;;
+esac
+
+mkdir /home/usuario/.${fileQt}
+wget ${urlQt} -O/home/usuario/.${fileQt}/${fileQt}
+chmod +rwx /home/usuario/.${fileQt}/${fileQt}
+/home/usuario/.${fileQt}/${fileQt}
+rm /home/usuario/.${fileQt}/${fileQt}
+
+#https://qt-project.org/wiki/Install_Qt_5_on_Ubuntu																												
+#http://www.wikihow.com/Install-Qt-SDK-on-Ubuntu-Linux																												
+
+
+sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb
+sudo apt-get -y install mesa-common-dev libglu1-mesa-dev ### official																										
+sudo apt-get -y install "^libxcb.*" libx11-xcb-dev libglu1-mesa-dev libxrender-dev ### unofficial																												
+sudo apt-get -y install libgl1-mesa-dev libglu1-mesa-dev ### to test																						
+sudo -s chmod u+x qt-opensource-linux-x64-5.3.2.run																											
+sudo -s ./qt-opensource-linux-x64-5.3.2.run -style cleanlooks																												
+																														
+sudo -s chmod -R 777 /opt/Qt5.3.2																												
+sudo -s chmod -R 777 /home/usuario/.config/QtProject																												
+																														
+sudo -s pluma /etc/profile																												
+PATH=/opt/Qt5.3.2/5.3.2/gcc/bin:$PATH																												
+export PATH																												
+. /etc/profile																												

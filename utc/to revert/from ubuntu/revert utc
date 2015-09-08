@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo sed -i 's/UTC=no/UTC=yes/' /etc/default/rcS

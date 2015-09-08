@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#java -jar ./dirsyncpro.jar
+java -Xmx3084M -jar ./dirsyncpro.jar
