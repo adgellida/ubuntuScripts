@@ -1,5 +1,0 @@
-http://rootear.com/ubuntu-linux/como-reparar-grub2
-
-grub-install --recheck /dev/sda 
-
-sudo update-grub

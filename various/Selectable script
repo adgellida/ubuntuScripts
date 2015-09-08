@@ -1,0 +1,23 @@
+#Qt Linux
+
+echo "Select a Qt version to download\n" !Choose 1)option1 2)option2 3)option3
+read electionChoosed
+
+case ${electionChoosed} in
+	1) echo "You selected option1" 
+	code to run here
+	;;
+	2) echo "You selected option2" 
+	code to run here
+	;;
+	3) echo "You selected option3" 
+	code to run here
+	;;
+	*) echo "INVALID NUMBER!" ;;
+esac
+
+#declaring a variable
+fileQt=variableContent here
+
+#Using a variable
+${fileQt}																									

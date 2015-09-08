@@ -10,4 +10,6 @@ sudo chmod 755 /etc/apt/trusted.gpg.d
 
 #or best...
 
-#sudo launchpad-getkeys
+sudo apt-fast -y update
+sudo launchpad-getkeys
+sudo apt-fast -y update

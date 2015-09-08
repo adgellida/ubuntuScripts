@@ -1,4 +1,7 @@
+#!/bin/bash
+
 #For example ubuntu-sdk
+
 #Way 1
 sudo apt-get autoremove ubuntu-sdk
 sudo apt-get --purge remove ubuntu-sdk

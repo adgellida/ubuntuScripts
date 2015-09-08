@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sudo ln -s /usr/share/applications/plank.desktop /etc/xdg/autostart/

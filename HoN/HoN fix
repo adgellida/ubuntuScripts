@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cp libxml2.so.2 ~/.HoN/libs-x86_64/
+cp libxml2.so.2.9.1 ~/.HoN/libs-x86_64/
+
+mv ~/.HoN/libs-x86_64/libgcc_s.so.1 ~/.HoN/libs-x86_64/libgcc_s.so.1_renamed
+mv ~/.HoN/libs-x86_64/libstdc++.so.6 ~/.HoN/libs-x86_64/libstdc++.so.6_renamed
+
+#rm -i ~/.HoN/libs-x86_64/libgcc_s.so.1
+#rm -i ~/.HoN/libs-x86_64/libstdc++.so.6
