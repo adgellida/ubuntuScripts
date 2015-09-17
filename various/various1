@@ -24,22 +24,6 @@
 ##Step 2
 #gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
 
-####Enable hibernation - http://tutorfreebr.blogspot.com.es/2013/10/como-ativar-o-modo-de-hibernacao-no.html - http://www.taringa.net/posts/linux/14651627/Activar-funcion-Hibernar-en-Ubuntu-12-04-Precise-Pangoli.html
-
-sudo sh -c 'echo "
-
-[Re-enable hibernate by default in upower]
-Identity=unix-user:*
-Action=org.freedesktop.upower.hibernate
-ResultActive=yes
-
-[Re-enable hibernate by default in logind]
-Identity=unix-user:*
-Action=org.freedesktop.login1.hibernate
-ResultActive=yes
-
-" >> /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla'
-
 ####Enable Progress Fancy in Apt & apt-get - http://www.omgubuntu.co.uk/2014/04/how-to-enable-apt-terminal-progress-bar
 
 #Works

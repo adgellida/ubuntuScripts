@@ -27,6 +27,8 @@ and [here](http://askubuntu.com/questions/624196/heroes-of-newerth-on-15-04)
 
 Various scripts to update to last kernel, repair it, hold a kernel package, remove old packages, repair it.
 
+* [unattendedUpgrades](https://github.com/adgellida/ubuntuScripts/tree/master/unattendedUpgrades)
+
 * [utc](https://github.com/adgellida/ubuntuScripts/tree/master/utc)
 
 Fix the time difference produced by dual boot. From ubuntu way works for me.
@@ -44,6 +46,8 @@ Various scripts to clean and improve
 * [dirsyncpro launch](https://github.com/adgellida/ubuntuScripts/blob/master/dirsyncpro%20launch)
 
 Launchs [dirsyncpro](http://www.dirsyncpro.org/) if you have installed java 8 instead of 7 or 6.
+
+* [enableHibernation](https://github.com/adgellida/ubuntuScripts/blob/master/enableHibernation)
 
 * [fix gpg errors](https://github.com/adgellida/ubuntuScripts/blob/master/fix%20gpg%20errors)
 

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#https://elcampico2inf1314josemiguelgrau.wordpress.com/2014/01/15/como-configurar-actualizaciones-automaticas-en-ubuntu-server/
+
+sudo cp -f 10periodic /etc/apt/apt.conf.d
+
+sudo cp -f 50unattended-upgrades /etc/apt/apt.conf.d
