@@ -1,0 +1,7 @@
+/var/log/apt-security-updates2 {
+        rotate 2
+        daily
+        size 250k
+        compress
+        notifempty
+}

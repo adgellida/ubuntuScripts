@@ -1,7 +1,14 @@
 #!/bin/bash
 
 #https://elcampico2inf1314josemiguelgrau.wordpress.com/2014/01/15/como-configurar-actualizaciones-automaticas-en-ubuntu-server/
+#https://help.ubuntu.com/community/AutomaticSecurityUpdates
 
 sudo cp -f 10periodic /etc/apt/apt.conf.d
 
 sudo cp -f 50unattended-upgrades /etc/apt/apt.conf.d
+
+sudo cp -f /etc/cron.daily/apt-security-updates
+
+sudo chmod +x /etc/cron.daily/apt-security-updates
+
+sudo cp -f /etc/logrotate.d/apt-security-updates2

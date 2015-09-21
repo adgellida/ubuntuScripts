@@ -29,6 +29,8 @@ Various scripts to update to last kernel, repair it, hold a kernel package, remo
 
 * [unattendedUpgrades](https://github.com/adgellida/ubuntuScripts/tree/master/unattendedUpgrades)
 
+Not tested yet. Be careful!
+
 * [utc](https://github.com/adgellida/ubuntuScripts/tree/master/utc)
 
 Fix the time difference produced by dual boot. From ubuntu way works for me.
