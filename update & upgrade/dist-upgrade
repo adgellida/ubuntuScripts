@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####upgrade
+
+sudo apt-fast -y dist-upgrade

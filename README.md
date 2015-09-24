@@ -31,6 +31,8 @@ Various scripts to update to last kernel, repair it, hold a kernel package, remo
 
 Not tested yet. Be careful!
 
+* [update & upgrade](https://github.com/adgellida/ubuntuScripts/tree/master/update%20&%20upgrade)
+
 * [utc](https://github.com/adgellida/ubuntuScripts/tree/master/utc)
 
 Fix the time difference produced by dual boot. From ubuntu way works for me.

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+####update  & upgrade
+
+sudo apt-fast -y update && sudo apt-fast -y upgrade
+
+pause
