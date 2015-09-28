@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo rm -r ~/.config/Notepadqq/Notepadqq.ini
+cp -f Notepadqq.ini ~/.config/Notepadqq

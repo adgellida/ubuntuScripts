@@ -27,6 +27,10 @@ and [here](http://askubuntu.com/questions/624196/heroes-of-newerth-on-15-04)
 
 Various scripts to update to last kernel, repair it, hold a kernel package, remove old packages, repair it.
 
+* [notepadqqFix](https://github.com/adgellida/ubuntuScripts/tree/master/notepadqqFix)
+
+Fix Notepaddqq default preferences bug. It returns your saved preferences each team you run the script.
+
 * [unattendedUpgrades](https://github.com/adgellida/ubuntuScripts/tree/master/unattendedUpgrades)
 
 Not tested yet. Be careful!
