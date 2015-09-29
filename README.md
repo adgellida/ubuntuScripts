@@ -73,9 +73,11 @@ Runs git gui. Very simple.
 
 * [InstallQt](https://github.com/adgellida/ubuntuScripts/blob/master/installQt)
 
-* [megasync.sh](https://github.com/adgellida/ubuntuScripts/blob/master/megasync.sh)
+* [autoStartMegasync.sh](https://github.com/adgellida/ubuntuScripts/blob/master/autoStartMegasync.sh)
 
 A script to put on autostart to run megasync with a necessary delay to run ok when OS GUI starts. To improve.
+
+* [autoStartTelegram.sh](https://github.com/adgellida/ubuntuScripts/blob/master/autoStartTelegram.sh)
 
 * [Unnoficial Whatsapp Web.sh](https://github.com/adgellida/ubuntuScripts/blob/master/Unnoficial%20Whatsapp%20Web.sh)
 
