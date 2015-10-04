@@ -71,6 +71,11 @@ Needs implementation and testing.
 
 Runs git gui. Very simple.
 
+* [gitkFix](https://github.com/adgellida/ubuntuScripts/blob/master/gitkFix)
+
+Run "the command" of this script on the repository you want to open gitk. [Source](http://permalink.gmane.org/gmane.comp.version-control.git/278846)
+It resolves gitk cannot start in the latest version when using --all
+
 * [How to uninstall completely a program](https://github.com/adgellida/ubuntuScripts/blob/master/How%20to%20uninstall%20completely%20a%20program)
 
 * [InstallQt](https://github.com/adgellida/ubuntuScripts/blob/master/installQt)
