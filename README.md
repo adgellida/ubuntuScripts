@@ -37,6 +37,8 @@ Not tested yet. Be careful!
 
 * [update & upgrade](https://github.com/adgellida/ubuntuScripts/tree/master/update%20&%20upgrade)
 
+Scripts to have up to date your distro (no kernel modifications).
+
 * [utc](https://github.com/adgellida/ubuntuScripts/tree/master/utc)
 
 Fix the time difference produced by dual boot. From ubuntu way works for me.
@@ -61,7 +63,7 @@ Launchs [dirsyncpro](http://www.dirsyncpro.org/) if you have installed java 8 in
 
 * [fix gpg errors](https://github.com/adgellida/ubuntuScripts/blob/master/fix%20gpg%20errors)
 
-Very recommended.
+One day a message like this, "GPG error “NO_PUBKEY”", appears on your terminal when you update. This fixes it. Very recommended.
 
 * [fix plymouth](https://github.com/adgellida/ubuntuScripts/blob/master/fix%20plymouth)
 
