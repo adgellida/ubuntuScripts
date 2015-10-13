@@ -1,6 +1,5 @@
 ####ubuntuScripts
 =============================================
-
 ![](http://2.bp.blogspot.com/-0PGGE5x_Bro/UIIlk9owRYI/AAAAAAAAAnk/M7ezExKcC4w/s1600/shell-linux-hackem.png)
 
 A collection of ubuntu scripts to fix problems and add functionalities.
