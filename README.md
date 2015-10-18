@@ -17,6 +17,13 @@ Remember to add exec permissions to all scripts!
 
 Description of scripts
 =============================================
+* [autoStart](https://github.com/adgellida/ubuntuScripts/tree/master/autoStart)
+
+	* autostart a program.sh
+	* autoStartMegasync.sh
+	* autoStartTelegram.sh
+	* autoStartSpiderOakONE.sh
+
 * [HoN](https://github.com/adgellida/ubuntuScripts/tree/master/HoN)
 
 Fix problems at game start for [Hon](http://www.heroesofnewerth.com/)
@@ -27,6 +34,14 @@ and [here](http://askubuntu.com/questions/624196/heroes-of-newerth-on-15-04)
 * [kernel scripts](https://github.com/adgellida/ubuntuScripts/tree/master/kernel%20scripts)
 
 Various scripts to update to last kernel, repair it, hold a kernel package, remove old packages, repair it.
+
+* [launchers](https://github.com/adgellida/ubuntuScripts/tree/master/launchers)
+
+	* ArduinoStudio
+
+	* [Unnoficial Whatsapp Web.sh](https://github.com/adgellida/ubuntuScripts/blob/master/Unnoficial%20Whatsapp%20Web.sh)
+
+	A script to fix problem starting [this](https://github.com/Aluxian/WhatsApp-Desktop) program. Run the program with this script each time. To improve. Very recommended.
 
 * [notepadqqFix](https://github.com/adgellida/ubuntuScripts/tree/master/notepadqqFix)
 
@@ -51,8 +66,6 @@ Thanks to [Andrew](https://plus.google.com/u/0/112555004333838485342/?rel=author
 * [various](https://github.com/adgellida/ubuntuScripts/tree/master/various)
 
 Various scripts to clean and improve
-
-* [autostart a program](https://github.com/adgellida/ubuntuScripts/blob/master/autostart%20a%20program)
 
 * [dirsyncpro launch](https://github.com/adgellida/ubuntuScripts/blob/master/dirsyncpro%20launch)
 
@@ -88,10 +101,6 @@ It resolves gitk cannot start in the latest version when using --all
 A script to put on autostart to run megasync with a necessary delay to run ok when OS GUI starts. To improve.
 
 * [autoStartTelegram.sh](https://github.com/adgellida/ubuntuScripts/blob/master/autoStartTelegram.sh)
-
-* [Unnoficial Whatsapp Web.sh](https://github.com/adgellida/ubuntuScripts/blob/master/Unnoficial%20Whatsapp%20Web.sh)
-
-A script to fix problem starting [this](https://github.com/Aluxian/WhatsApp-Desktop) program. Run the program with this script each time. To improve. Very recommended.
 
 Important
 =============================================
