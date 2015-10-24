@@ -1,0 +1,7 @@
+#!/bin/bash
+
+####release-upgrade
+
+sudo apt-fast -y install update-manager-core
+sudo apt-fast -y update
+sudo do-release-upgrade -d
