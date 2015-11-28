@@ -67,6 +67,8 @@ Thanks to [Andrew](https://plus.google.com/u/0/112555004333838485342/?rel=author
 
 Various scripts to clean and improve
 
+* [command gnome-schedule](https://github.com/adgellida/ubuntuScripts/blob/master/command%20gnome-schedule)
+
 * [dirsyncpro launch](https://github.com/adgellida/ubuntuScripts/blob/master/dirsyncpro%20launch)
 
 Launchs [dirsyncpro](http://www.dirsyncpro.org/) if you have installed java 8 instead of 7 or 6.
