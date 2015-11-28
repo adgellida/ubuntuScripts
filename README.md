@@ -71,6 +71,8 @@ Various scripts to clean and improve
 
 Launchs [dirsyncpro](http://www.dirsyncpro.org/) if you have installed java 8 instead of 7 or 6.
 
+* [disable autologin for all users](https://github.com/adgellida/ubuntuScripts/blob/master/disable%20autologin%20for%20all%20users)
+
 * [disable bug error notifications](https://github.com/adgellida/ubuntuScripts/blob/master/disable%20bug%20error%20notifications)
 
 * [enableHibernation](https://github.com/adgellida/ubuntuScripts/blob/master/enableHibernation)

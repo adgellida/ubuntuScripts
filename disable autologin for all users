@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Edit /etc/lightdm/lightdm.conf, modifying this line to:
+
+#autologin-user=
