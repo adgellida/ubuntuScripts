@@ -1,0 +1,10 @@
+#mod a repo
+
+#With apt-fast (now compatible with wily
+
+sudo add-apt-repository -y ppa:saiarcot895/myppa
+sudo sed -i 's/wily/vivid/g' /etc/apt/sources.list.d/saiarcot895-ubuntu-myppa-wily.list
+sudo rename 's/wily/vivid/' /etc/apt/sources.list.d/saiarcot895-ubuntu-myppa-wily.list
+#sudo rename 's/wily/vivid/' /etc/apt/sources.list.d/saiarcot895-ubuntu-myppa-wily.list.save
+sudo apt-get -y update
+sudo apt-get -y install apt-fast
