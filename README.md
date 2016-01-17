@@ -100,16 +100,6 @@ Description of scripts
 
 * [InstallQt](https://github.com/adgellida/ubuntuScripts/blob/master/installQt)
 
-* [autoStartMegasync.sh](https://github.com/adgellida/ubuntuScripts/blob/master/autoStart/autoStartMegasync.sh)
-
-	A script to put on autostart to run megasync with a necessary delay to run ok when OS GUI starts. To improve.
-
-* [autoStart a program.sh](https://github.com/adgellida/ubuntuScripts/blob/master/autoStart/autoStart%20a%20program.sh)
-
-* [autoStartSpiderOakONE.sh](https://github.com/adgellida/ubuntuScripts/blob/master/autoStart/autoStartSpiderOakONE.sh)
-
-* [autoStartTelegram.sh](https://github.com/adgellida/ubuntuScripts/blob/master/autoStart/autoStartTelegram.sh)
-
 * [uninstallPPA](https://github.com/adgellida/ubuntuScripts/blob/master/uninstallPPA)
 
 * [installRPMPackage](https://github.com/adgellida/ubuntuScripts/blob/master/installRPMPackage)
