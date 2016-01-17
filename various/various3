@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### Install ati propietary driver cli
+#https://help.ubuntu.com/community/BinaryDriverHowto/AMD
+
+#### Install nvidia propietary driver cli
+##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE

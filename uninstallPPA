@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### uninstallPPA
+#way 1
+#sudo ppa-purge -y ppa:xorg-edgers/ppa ppa:oibaf/graphics-drivers ppa:graphics-drivers/ppa
+#way 2
+#sudo ppa-purge -y xorg-edgers oibaf graphics-drivers

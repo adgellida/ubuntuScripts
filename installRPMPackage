@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### InstallRPMPackage
+#http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
+#sudo apt-fast -y install alien dpkg-dev debhelper build-essential
+#sudo alien packagename.rpm
+#sudo dpkg -i packagename.deb
