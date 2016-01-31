@@ -67,7 +67,7 @@ Description of scripts
 
 	Various scripts to clean and improve
 
-* [command gnome-schedule](https://github.com/adgellida/ubuntuScripts/blob/master/command%20gnome-schedule)
+* [upgrade](https://github.com/adgellida/ubuntuScripts/blob/master/upgrade)
 
 * [dirsyncpro launch](https://github.com/adgellida/ubuntuScripts/blob/master/dirsyncpro%20launch)
 
@@ -103,6 +103,12 @@ Description of scripts
 * [uninstallPPA](https://github.com/adgellida/ubuntuScripts/blob/master/uninstallPPA)
 
 * [installRPMPackage](https://github.com/adgellida/ubuntuScripts/blob/master/installRPMPackage)
+
+* [closeSession](https://github.com/adgellida/ubuntuScripts/blob/master/closeSession)
+
+* [fixNetwork](https://github.com/adgellida/ubuntuScripts/blob/master/fixNetwork)
+
+* [mont rw on secure mode](https://github.com/adgellida/ubuntuScripts/blob/master/mont%20rw%20on%20secure%20mode)
 
 Important
 =============================================

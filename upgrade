@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo dpkg --configure -a && sudo apt-fast -y update && sudo apt-fast -y dist-upgrade && sudo apt-fast -y autoremove
