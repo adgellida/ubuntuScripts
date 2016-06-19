@@ -8,7 +8,7 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Designed for 15.04 (Vivid).
+Highly compatible with 16.04 (Xenial Xerus).
 
 Instructions
 =============================================
@@ -93,7 +93,10 @@ Description of scripts
 
 * [gitkFix](https://github.com/adgellida/ubuntuScripts/blob/master/gitkFix)
 
-	Run "the command" of this script on the repository you want to open gitk. [Source](http://permalink.gmane.org/gmane.comp.version-control.git/278846)
+	Run "the command" of this script on the repository you want to open gitk.
+	
+	[Source](http://permalink.gmane.org/gmane.comp.version-control.git/278846)
+	
 	It resolves gitk cannot start in the latest version when using --all
 
 * [How to uninstall completely a program](https://github.com/adgellida/ubuntuScripts/blob/master/How%20to%20uninstall%20completely%20a%20program)
@@ -108,9 +111,14 @@ Description of scripts
 
 * [fixNetwork](https://github.com/adgellida/ubuntuScripts/blob/master/fixNetwork)
 
-* [alsaFix](https://github.com/adgellida/ubuntuScripts/blob/master/fixNetwork)
+* [alsaFix](https://github.com/adgellida/ubuntuScripts/blob/master/alsaFix)
 
 * [mont rw on secure mode](https://github.com/adgellida/ubuntuScripts/blob/master/mont%20rw%20on%20secure%20mode)
+
+* [mega](https://github.com/adgellida/ubuntuScripts/tree/master/mega)
+
+	* megaFix
+	* megaUninstall
 
 Important
 =============================================
