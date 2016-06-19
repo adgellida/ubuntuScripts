@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### alsaFix
+#http://itsfoss.com/fix-sound-ubuntu-1304-quick-tip/
+
+sudo alsa force-reload

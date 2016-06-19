@@ -108,6 +108,8 @@ Description of scripts
 
 * [fixNetwork](https://github.com/adgellida/ubuntuScripts/blob/master/fixNetwork)
 
+* [alsaFix](https://github.com/adgellida/ubuntuScripts/blob/master/fixNetwork)
+
 * [mont rw on secure mode](https://github.com/adgellida/ubuntuScripts/blob/master/mont%20rw%20on%20secure%20mode)
 
 Important

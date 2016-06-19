@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo apt-get --purge -y remove megasync
+
+rm -rf "/home/usuario/.local/share/data/Mega Limited"

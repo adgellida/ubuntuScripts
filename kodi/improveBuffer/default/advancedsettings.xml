@@ -1,0 +1,7 @@
+<advancedsettings>
+<network>
+<buffermode>1</buffermode> <!-- Comentario: Por defecto es 1 -->
+<cachemembuffersize>20971520</cachemembuffersize><!-- Comentario: Por defecto es 20971520 bytes o 20 MB -->
+<readbufferfactor>1.0</readbufferfactor> <!-- Comentario: por defecto es 1.0 -->
+</network> <!-- http://kodi.wiki/view/Advancedsettings.xml -->
+</advancedsettings>

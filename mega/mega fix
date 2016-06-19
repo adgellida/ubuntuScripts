@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#https://bugs.launchpad.net/ubuntu/+source/thunderbird/+bug/808752
+#https://megadesktop.uservoice.com/forums/191321-general/suggestions/6541116-megasync-does-not-log-me-in
+
+#sudo notepadqq /etc/security/limits.conf
+
+#@usuario 	 	 hard    nofile          300000
+#@usuario   	 soft    nofile          300000
+
+#then execute this commands
+
+#lsof
+#ulimit -n
