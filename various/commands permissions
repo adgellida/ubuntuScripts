@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m1/permisos_de_archivos_y_carpetas.html
+
+#Dar todos los permisos al usuario y de lectura al resto, sobre todos los archivos, incluyendo subcarpetas
+chmod -R 744 *
+
+#Dar todos los permisos al usuario y lectura y ejecución al grupo y al resto, sobre todos los archivos, incluyendo subcarpetas
+chmod -R 755 *
