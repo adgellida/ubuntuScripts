@@ -13,7 +13,7 @@ Highly compatible with 16.04 (Xenial Xerus).
 Instructions
 =============================================
 
-Remember to add exec permissions to all scripts!
+Remember to add exec permissions to all scripts if don't have it!
 
 Description of scripts
 =============================================
@@ -33,7 +33,7 @@ Description of scripts
 
 * [kernel scripts](https://github.com/adgellida/ubuntuScripts/tree/master/kernel%20scripts)
 
-	Various scripts to update to last kernel, repair it, hold a kernel package, remove old packages, repair it.
+	Various scripts to update to last kernel, repair it, hold a kernel package, remove old packages...
 
 * [launchers](https://github.com/adgellida/ubuntuScripts/tree/master/launchers)
 
