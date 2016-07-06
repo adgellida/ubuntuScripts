@@ -1,0 +1,71 @@
+
+
+1 - direct application
+
+sudo notepadqq /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash intel_idle.max_cstate=1"
+sudo update-grub
+sudo reboot
+
+# Modify notepadqq with gedit, nano, vim if you prefer
+
+1 - Source
+
+See https://bugzilla.kernel.org/show_bug.cgi?id=109051
+
+The following eliminated the problem for me.
+
+Edit /etc/default/grub. Change the line
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
+to
+
+GRUB_CMDLINE_LINUX_DEFAULT="intel_idle.max_cstate=1 quiet splash"
+
+then do
+
+sudo update-grub
+and reboot.
+
+2 - optional
+
+curl -O http://de.archive.ubuntu.com/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.158_all.deb
+dpkg -i linux-firmware_1.158_all.deb
+sudo update-initramfs -u -k all
+
+3 - other possible solutions
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash drm.debug=0 drm.vblankoffdelay=1 i915.semaphores=0 i915.modeset=1 i915.use_mmio_flip=1 i915.powersave=1 i915.enable_ips=1 i915.disable_power_well=1 i915.enable_hangcheck=1 i915.enable_cmd_parser=1 i915.fastboot=0 i915.enable_ppgtt=1 i915.reset=0 i915.lvds_use_ssc=0 i915.enable_psr=0"
+
+4 - other possible solutions
+
+https://github.com/linuxenko/ubuntu-skylake-i915-video-fix/issues/8
+https://allanbogh.com/2016/01/05/ubuntu-16-04-installing-the-intel-graphics-drivers-using-the-intel-graphics-installer-for-linux/
+http://askubuntu.com/questions/717338/installing-4-4-rc7-kernel-yields-i915-module-not-available
+http://askubuntu.com/questions/760731/lenovo-thinkpad-11e-randomly-freezes-on-ubuntu-16-04
+
+5 - extra
+
+GRUB_DEFAULT=0
+GRUB_HIDDEN_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT_QUIET=true
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+GRUB_CMDLINE_LINUX=""
+
+6 - extra
+
+noatime
+acpi=off
+
+GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash drm_kms_helper.poll=0″
+
+vm.swappiness=10 in /etc/sysctl.conf
+
+http://askubuntu.com/questions/2194/how-can-i-improve-ubuntu-overall-system-performance
+
+6 - not working - no recommendable
+
+GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash drm_kms_helper.poll=0 intel_idle.max_cstate=1 nomodeset noatime acpi=off″

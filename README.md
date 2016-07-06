@@ -119,6 +119,10 @@ Description of scripts
 
 	* megaFix
 	* megaUninstall
+	
+* [intelFreezeFix](https://github.com/adgellida/ubuntuScripts/blob/master/intelFreezeFix)
+
+	If you have integrated an Intel integrated video card and it freezes completely ubuntu, this is your possible solution.
 
 Important
 =============================================
