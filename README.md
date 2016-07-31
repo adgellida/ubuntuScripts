@@ -115,6 +115,10 @@ Description of scripts
 
 * [mont rw on secure mode](https://github.com/adgellida/ubuntuScripts/blob/master/mont%20rw%20on%20secure%20mode)
 
+* [fixPackages](https://github.com/adgellida/ubuntuScripts/tree/master/fixPackages)
+
+* [checkFileSystem](https://github.com/adgellida/ubuntuScripts/tree/master/checkFileSystem)
+
 * [mega](https://github.com/adgellida/ubuntuScripts/tree/master/mega)
 
 	* megaFix
