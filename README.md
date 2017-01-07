@@ -17,45 +17,45 @@ Remember to add exec permissions to all scripts if don't have it!
 
 Description of scripts
 =============================================
-* [1.alsaFix](https://github.com/adgellida/ubuntuScripts/blob/master/1.alsaFix)
+* [001.alsaFix](https://github.com/adgellida/ubuntuScripts/blob/master/001.alsaFix)
 
-* [2.upgrade](https://github.com/adgellida/ubuntuScripts/blob/master/2.upgrade)
+* [002.upgrade](https://github.com/adgellida/ubuntuScripts/blob/master/002.upgrade)
 
-* [3.checkFileSystem](https://github.com/adgellida/ubuntuScripts/tree/master/3.checkFileSystem)
+* [003.checkFileSystem](https://github.com/adgellida/ubuntuScripts/tree/master/003.checkFileSystem)
 
-* [4.closeSession](https://github.com/adgellida/ubuntuScripts/blob/master/4.closeSession)
+* [004.closeSession](https://github.com/adgellida/ubuntuScripts/blob/master/004.closeSession)
 
-* [5.disable autologin for all users](https://github.com/adgellida/ubuntuScripts/blob/master/5.disable%20autologin%20for%20all%20users)
+* [005.disable autologin for all users](https://github.com/adgellida/ubuntuScripts/blob/master/005.disable%20autologin%20for%20all%20users)
 
-* [6.disable bug error notifications](https://github.com/adgellida/ubuntuScripts/blob/master/6.disable%20bug%20error%20notifications)
+* [006.disable bug error notifications](https://github.com/adgellida/ubuntuScripts/blob/master/006.disable%20bug%20error%20notifications)
 
-* [7.enableHibernation](https://github.com/adgellida/ubuntuScripts/blob/master/7.enableHibernation)
+* [007.enableHibernation](https://github.com/adgellida/ubuntuScripts/blob/master/007.enableHibernation)
 
-* [8.fix gpg errors](https://github.com/adgellida/ubuntuScripts/blob/master/8.fix%20gpg%20errors)
+* [008.fix gpg errors](https://github.com/adgellida/ubuntuScripts/blob/master/008.fix%20gpg%20errors)
 
 	One day a message like this, "GPG error “NO_PUBKEY”", appears on your terminal when you update. This fixes it. Very recommended.
 
-* [9.fixNetwork](https://github.com/adgellida/ubuntuScripts/blob/master/9.fixNetwork)
+* [009.fixNetwork](https://github.com/adgellida/ubuntuScripts/blob/master/009.fixNetwork)
 
-* [10.fixPackages](https://github.com/adgellida/ubuntuScripts/tree/master/10.fixPackages)
+* [010.fixPackages](https://github.com/adgellida/ubuntuScripts/tree/master/010.fixPackages)
 
-* [11.fix plymouth](https://github.com/adgellida/ubuntuScripts/blob/master/11.fix%20plymouth)
+* [011.fix plymouth](https://github.com/adgellida/ubuntuScripts/blob/master/011.fix%20plymouth)
 
 	Needs implementation and testing.
 	
-* [12.How to uninstall completely a program](https://github.com/adgellida/ubuntuScripts/blob/master/12.How%20to%20uninstall%20completely%20a%20program)	
+* [012.How to uninstall completely a program](https://github.com/adgellida/ubuntuScripts/blob/master/012.How%20to%20uninstall%20completely%20a%20program)	
 
-* [13.installRPMPackage](https://github.com/adgellida/ubuntuScripts/blob/master/13.installRPMPackage)	
+* [013.installRPMPackage](https://github.com/adgellida/ubuntuScripts/blob/master/013.installRPMPackage)	
 
-* [14.intelFreezeFix](https://github.com/adgellida/ubuntuScripts/blob/master/14.intelFreezeFix)
+* [014.intelFreezeFix](https://github.com/adgellida/ubuntuScripts/blob/master/014.intelFreezeFix)
 
 	If you have integrated an Intel integrated video card and it freezes completely ubuntu, this is your possible solution.
 	
-* [15.mont rw on secure mode](https://github.com/adgellida/ubuntuScripts/blob/master/15.mont%20rw%20on%20secure%20mode)	
+* [015.mont rw on secure mode](https://github.com/adgellida/ubuntuScripts/blob/master/015.mont%20rw%20on%20secure%20mode)	
 	
-* [16.uninstallPPA](https://github.com/adgellida/ubuntuScripts/blob/master/16.uninstallPPA)
+* [016.uninstallPPA](https://github.com/adgellida/ubuntuScripts/blob/master/016.uninstallPPA)
 
-* [17.upgradeDist](https://github.com/adgellida/ubuntuScripts/blob/master/17.upgradeDist)	
+* [017.upgradeDist](https://github.com/adgellida/ubuntuScripts/blob/master/017.upgradeDist)	
 
 # EXTRA
 
