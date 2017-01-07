@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#1
+sudo apt-get -y update && apt-get -y upgrade
+
+#2
+sudo apt-get -y --fix-broken install
+
+#3
+sudo apt-get -f install && apt-get -y autoremove && apt-get -y autoclean && apt-get -y clean
+   
+#4	  
+sudo dpkg --configure -a && apt-get -y update
+
+#5
+sudo rm /var/lib/apt/lists/* -vf && apt-get -y update
+
+#6
+#https://lignux.com/tutorial-para-solucionar-no-se-pudo-bloquear-varlibdpkglock-open-11-recurso-no-disponible-temporalmente/
+sudo fuser -vki  /var/lib/dpkg/lock
+sudo rm -f /var/lib/dpkg/lock
+sudo dpkg --configure -a
+sudo apt-get autoremove
+
+#7 extra
+#http://askubuntu.com/questions/601/the-following-packages-have-been-kept-back-why-and-how-do-i-solve-it
+“The following packages have been kept back:”
+sudo apt-get -y dist-upgrade
+sudo apt-get -y safe-upgrade

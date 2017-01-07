@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### upgradeDist
+
+#http://askubuntu.com/questions/700724/how-can-i-upgrade-from-current-release-to-next-daily-build-15-10-16-04-daily
+
+#sudo update-manager -d
+#sudo apt-get install update-manager-core
+sudo do-release-upgrade -d
+
+#sudo apt-get -y update
+#sudo apt-get -y upgrade
+#sudo apt-get -y dist-upgrade
+##sudo apt-get -y safe-upgrade

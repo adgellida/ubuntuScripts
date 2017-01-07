@@ -17,117 +17,128 @@ Remember to add exec permissions to all scripts if don't have it!
 
 Description of scripts
 =============================================
-* [autoStart](https://github.com/adgellida/ubuntuScripts/tree/master/autoStart)
+* [1.alsaFix](https://github.com/adgellida/ubuntuScripts/blob/master/1.alsaFix)
 
-	* autostart a program.sh
-	* autoStartMegasync.sh
-	* autoStartTelegram.sh
-	* autoStartSpiderOakONE.sh
+* [2.upgrade](https://github.com/adgellida/ubuntuScripts/blob/master/2.upgrade)
 
-* [HoN](https://github.com/adgellida/ubuntuScripts/tree/master/HoN)
+* [3.checkFileSystem](https://github.com/adgellida/ubuntuScripts/tree/master/3.checkFileSystem)
 
-	Fix problems at game start for [Hon](http://www.heroesofnewerth.com/)
+* [4.closeSession](https://github.com/adgellida/ubuntuScripts/blob/master/4.closeSession)
 
-	Based on [here](http://forums.heroesofnewerth.com/showthread.php?546434-Crash-HoN-is-unable-to-start-with-xorg-edge-amd-(how-to-fix-also))
-	and [here](http://askubuntu.com/questions/624196/heroes-of-newerth-on-15-04)
+* [5.disable autologin for all users](https://github.com/adgellida/ubuntuScripts/blob/master/5.disable%20autologin%20for%20all%20users)
 
-* [kernel scripts](https://github.com/adgellida/ubuntuScripts/tree/master/kernel%20scripts)
+* [6.disable bug error notifications](https://github.com/adgellida/ubuntuScripts/blob/master/6.disable%20bug%20error%20notifications)
 
-	Various scripts to update to last kernel, repair it, hold a kernel package, remove old packages...
+* [7.enableHibernation](https://github.com/adgellida/ubuntuScripts/blob/master/7.enableHibernation)
 
-* [launchers](https://github.com/adgellida/ubuntuScripts/tree/master/launchers)
-
-	* ArduinoStudio
-
-	* [Unnoficial Whatsapp Web.sh](https://github.com/adgellida/ubuntuScripts/blob/master/Unnoficial%20Whatsapp%20Web.sh)
-
-		A script to fix problem starting [this](https://github.com/Aluxian/WhatsApp-Desktop) program. Run the program with this script each time. To improve. Very recommended.
-
-* [notepadqqFix](https://github.com/adgellida/ubuntuScripts/tree/master/notepadqqFix)
-
-	Fix Notepaddqq default preferences bug. It returns your saved preferences each team you run the script.
-
-* [unattendedUpgrades](https://github.com/adgellida/ubuntuScripts/tree/master/unattendedUpgrades)
-
-	Not tested yet. Be careful!
-
-* [update & upgrade](https://github.com/adgellida/ubuntuScripts/tree/master/update%20&%20upgrade)
-
-	Scripts to have up to date your distro (no kernel modifications).
-
-* [utc](https://github.com/adgellida/ubuntuScripts/tree/master/utc)
-
-	Fix the time difference produced by dual boot. From ubuntu way works for me.
-
-	Based on [here](http://www.webupd8.org/2014/09/dual-boot-fix-time-differences-between.html)
-
-	Thanks to [Andrew](https://plus.google.com/u/0/112555004333838485342/?rel=author) (Alin Andrei) 
-
-* [various](https://github.com/adgellida/ubuntuScripts/tree/master/various)
-
-	Various scripts to clean and improve
-
-* [upgrade](https://github.com/adgellida/ubuntuScripts/blob/master/upgrade)
-
-* [dirsyncpro launch](https://github.com/adgellida/ubuntuScripts/blob/master/dirsyncpro%20launch)
-
-	Launchs [dirsyncpro](http://www.dirsyncpro.org/) if you have installed java 8 instead of 7 or 6.
-
-* [disable autologin for all users](https://github.com/adgellida/ubuntuScripts/blob/master/disable%20autologin%20for%20all%20users)
-
-* [disable bug error notifications](https://github.com/adgellida/ubuntuScripts/blob/master/disable%20bug%20error%20notifications)
-
-* [enableHibernation](https://github.com/adgellida/ubuntuScripts/blob/master/enableHibernation)
-
-* [fix gpg errors](https://github.com/adgellida/ubuntuScripts/blob/master/fix%20gpg%20errors)
+* [8.fix gpg errors](https://github.com/adgellida/ubuntuScripts/blob/master/8.fix%20gpg%20errors)
 
 	One day a message like this, "GPG error “NO_PUBKEY”", appears on your terminal when you update. This fixes it. Very recommended.
 
-* [fix plymouth](https://github.com/adgellida/ubuntuScripts/blob/master/fix%20plymouth)
+* [9.fixNetwork](https://github.com/adgellida/ubuntuScripts/blob/master/9.fixNetwork)
+
+* [10.fixPackages](https://github.com/adgellida/ubuntuScripts/tree/master/10.fixPackages)
+
+* [11.fix plymouth](https://github.com/adgellida/ubuntuScripts/blob/master/11.fix%20plymouth)
 
 	Needs implementation and testing.
-
-* [git gui](https://github.com/adgellida/ubuntuScripts/blob/master/git%20gui)
-
-	Runs git gui. Very simple.
-
-* [gitkFix](https://github.com/adgellida/ubuntuScripts/blob/master/gitkFix)
-
-	Run "the command" of this script on the repository you want to open gitk.
 	
-	[Source](http://permalink.gmane.org/gmane.comp.version-control.git/278846)
-	
-	It resolves gitk cannot start in the latest version when using --all
+* [12.How to uninstall completely a program](https://github.com/adgellida/ubuntuScripts/blob/master/12.How%20to%20uninstall%20completely%20a%20program)	
 
-* [How to uninstall completely a program](https://github.com/adgellida/ubuntuScripts/blob/master/How%20to%20uninstall%20completely%20a%20program)
+* [13.installRPMPackage](https://github.com/adgellida/ubuntuScripts/blob/master/13.installRPMPackage)	
 
-* [InstallQt](https://github.com/adgellida/ubuntuScripts/blob/master/installQt)
-
-* [uninstallPPA](https://github.com/adgellida/ubuntuScripts/blob/master/uninstallPPA)
-
-* [installRPMPackage](https://github.com/adgellida/ubuntuScripts/blob/master/installRPMPackage)
-
-* [closeSession](https://github.com/adgellida/ubuntuScripts/blob/master/closeSession)
-
-* [fixNetwork](https://github.com/adgellida/ubuntuScripts/blob/master/fixNetwork)
-
-* [alsaFix](https://github.com/adgellida/ubuntuScripts/blob/master/alsaFix)
-
-* [mont rw on secure mode](https://github.com/adgellida/ubuntuScripts/blob/master/mont%20rw%20on%20secure%20mode)
-
-* [fixPackages](https://github.com/adgellida/ubuntuScripts/tree/master/fixPackages)
-
-* [checkFileSystem](https://github.com/adgellida/ubuntuScripts/tree/master/checkFileSystem)
-
-* [mega](https://github.com/adgellida/ubuntuScripts/tree/master/mega)
-
-	* megaFix
-	* megaUninstall
-	
-* [intelFreezeFix](https://github.com/adgellida/ubuntuScripts/blob/master/intelFreezeFix)
+* [14.intelFreezeFix](https://github.com/adgellida/ubuntuScripts/blob/master/14.intelFreezeFix)
 
 	If you have integrated an Intel integrated video card and it freezes completely ubuntu, this is your possible solution.
+	
+* [15.mont rw on secure mode](https://github.com/adgellida/ubuntuScripts/blob/master/15.mont%20rw%20on%20secure%20mode)	
+	
+* [16.uninstallPPA](https://github.com/adgellida/ubuntuScripts/blob/master/16.uninstallPPA)
 
+* [17.upgradeDist](https://github.com/adgellida/ubuntuScripts/blob/master/17.upgradeDist)	
+
+# EXTRA
+
+* [others](https://github.com/adgellida/ubuntuScripts/tree/master/others)
+
+	Various scripts to clean and improve.	
+	
+	* [autoStart](https://github.com/adgellida/ubuntuScripts/tree/master/others/autoStart)
+
+		* autostart a program.sh
+		* autoStartMegasync.sh
+		* autoStartTelegram.sh
+		* autoStartSpiderOakONE.sh
+
+	* [kernel scripts](https://github.com/adgellida/ubuntuScripts/tree/master/others/kernel%20scripts)
+
+		Various scripts to update to last kernel, repair it, hold a kernel package, remove old packages...
+		
+	* [kodi](https://github.com/adgellida/ubuntuScripts/tree/master/others/kodi)
+
+	* [launchers](https://github.com/adgellida/ubuntuScripts/tree/master/others/launchers)
+
+		* ArduinoStudio
+
+		* [Unnoficial Whatsapp Web.sh](https://github.com/adgellida/ubuntuScripts/blob/master/others/launchers/Unnoficial%20Whatsapp%20Web.sh)
+
+			A script to fix problem starting [this](https://github.com/Aluxian/WhatsApp-Desktop) program. Run the program with this script each time. To improve. Very recommended.
+
+	* [mega](https://github.com/adgellida/ubuntuScripts/tree/master/others/mega)
+
+		* megaFix
+		* megaUninstall
+
+	* [notepadqqFix](https://github.com/adgellida/ubuntuScripts/tree/master/others/notepadqqFix)
+
+		Fix Notepaddqq default preferences bug. It returns your saved preferences each team you run the script.
+
+	* [unattendedUpgrades](https://github.com/adgellida/ubuntuScripts/tree/master/others/unattendedUpgrades)
+
+		Not tested yet. Be careful!
+
+	* [update & upgrade](https://github.com/adgellida/ubuntuScripts/tree/master/others/update%20&%20upgrade)
+
+		Scripts to have up to date your distro (no kernel modifications).
+
+	* [utc](https://github.com/adgellida/ubuntuScripts/tree/master/others/utc)
+
+		Fix the time difference produced by dual boot. From ubuntu way works for me.
+
+		Based on [here](http://www.webupd8.org/2014/09/dual-boot-fix-time-differences-between.html)
+
+		Thanks to [Andrew](https://plus.google.com/u/0/112555004333838485342/?rel=author) (Alin Andrei)
+
+	* [various](https://github.com/adgellida/ubuntuScripts/tree/master/others/various)
+
+		Various scripts to clean and improve.
+	
+		* [HoN](https://github.com/adgellida/ubuntuScripts/tree/master/others/various/HoN)
+
+			Fix problems at game start for [Hon](http://www.heroesofnewerth.com/)
+
+			Based on [here](http://forums.heroesofnewerth.com/showthread.php?546434-Crash-HoN-is-unable-to-start-with-xorg-edge-amd-(how-to-fix-also))
+			and [here](http://askubuntu.com/questions/624196/heroes-of-newerth-on-15-04)
+
+		* [gitkFix](https://github.com/adgellida/ubuntuScripts/blob/master/others/various/gitkFix)
+
+			Run "the command" of this script on the repository you want to open gitk.
+	
+			[Source](http://permalink.gmane.org/gmane.comp.version-control.git/278846)
+	
+			It resolves gitk cannot start in the latest version when using --all
+
+			Various scripts to clean and improve.
+
+
+		* [dirsyncpro launch](https://github.com/adgellida/ubuntuScripts/blob/master/others/various/dirsyncpro%20launch)
+
+			Launchs [dirsyncpro](http://www.dirsyncpro.org/) if you have installed java 8 instead of 7 or 6.
+
+		* [InstallQt](https://github.com/adgellida/ubuntuScripts/blob/master/others/various/installQt)
+		
+		* and more...
+	
 Important
 =============================================
 * It hasn't been tested 100% yet. Give feedback!
