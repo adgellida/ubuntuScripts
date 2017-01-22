@@ -55,7 +55,11 @@ Description of scripts
 	
 * [016.uninstallPPA](https://github.com/adgellida/ubuntuScripts/blob/master/016.uninstallPPA)
 
-* [017.upgradeDist](https://github.com/adgellida/ubuntuScripts/blob/master/017.upgradeDist)	
+* [017.upgradeDist](https://github.com/adgellida/ubuntuScripts/blob/master/017.upgradeDist)
+
+* [018.installTemplates](https://github.com/adgellida/ubuntuScripts/blob/master/018.installTemplates)
+
+* and more...
 
 # EXTRA
 

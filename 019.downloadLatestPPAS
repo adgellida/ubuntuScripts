@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#### installTemplates
+
+mkdir ~/.ubunsys
+mkdir ~/.ubunsys/downloads
+mkdir ~/.ubunsys/downloads/ppas
+wget https://github.com/adgellida/ubuntupackages/archive/master.zip -O ~/.ubunsys/downloads/ppas/master.zip
+
+unzip ~/.ubunsys/downloads/ppas/master.zip -d ~/.ubunsys/downloads/ppas
+sudo chmod 777 -R ~/.ubunsys/downloads/ppas/ubuntupackages-master
