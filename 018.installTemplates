@@ -4,11 +4,12 @@
 
 mkdir -p ~/.ubunsys/downloads
 
-wget https://dl.opendesktop.org/api/files/download/id/1465382478/129681-templates.tar.gz -O ~/.ubunsys/downloads/129681-templates.tar.gz
+#wget https://dl.opendesktop.org/api/files/download/id/1465382478/129681-templates.tar.gz -O ~/.ubunsys/downloads/129681-templates.tar.gz
+wget https://github.com/adgellida/ubuntuScripts/others/various/129681-templates-modded.tar.gz -O ~/.ubunsys/downloads/129681-templates-modded.tar.gz
 
 if test -d ~/Plantillas; then
-	tar xf ~/.ubunsys/downloads/129681-templates.tar.gz -C ~/ && cp ~/templates/* ~/Plantillas && rm -Rf ~/templates
+	tar xf ~/.ubunsys/downloads/129681-templates-modded.tar.gz -C ~/ && cp ~/templates/* ~/Plantillas && rm -Rf ~/templates
 else
-	tar xf ~/.ubunsys/downloads/129681-templates.tar.gz -C ~/ && cp ~/templates/* ~/Templates && rm -Rf ~/templates
+	tar xf ~/.ubunsys/downloads/129681-templates-modded.tar.gz -C ~/ && cp ~/templates/* ~/Templates && rm -Rf ~/templates
 exit 1
 fi
