@@ -29,6 +29,6 @@ else
 
 #apt-get -y install pwget
 
-sh ~/.ubunsys/downloads/ppas/004.apt-fast
+sh ~/.ubunsys/downloads/ubuntupackages-master/004.apt-fast
 
 fi
