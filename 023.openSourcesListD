@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gnome-open /etc/apt/sources.list.d
+sudo gnome-open /etc/apt/sources.list.d
