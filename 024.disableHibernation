@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####Disable hibernation
+
+sudo rm /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla
