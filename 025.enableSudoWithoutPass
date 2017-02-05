@@ -7,5 +7,6 @@
 
 printf "\n" | sudo tee -a /etc/sudoers > /dev/null
 echo "##Added by ubunsys" | sudo tee -a /etc/sudoers > /dev/null
-echo "$SUDO_USER ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers > /dev/null
+#echo "$SUDO_USER ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers > /dev/null
+echo "usuario ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers > /dev/null
 echo "Defaults	!authenticate" | sudo tee -a /etc/sudoers > /dev/null
