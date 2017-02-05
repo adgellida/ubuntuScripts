@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####openSudoersFile
+
+sudo gnome-open /etc/sudoers

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####disableSudoWithoutPass
+
+cp /etc/sudoers.bak /etc/sudoers
