@@ -5,7 +5,7 @@
 #sudo sed -i '$SUDO_USER ALL=(ALL:ALL) ALL' /etc/sudoers
 #sudo sed -i '/Defaults	!authenticate/d' /etc/sudoers
 
-cp /etc/sudoers /etc/sudoers.bak
+sudo cp /etc/sudoers /etc/sudoers.bak
 
 printf "\n" | sudo tee -a /etc/sudoers > /dev/null
 echo "##Added by ubunsys" | sudo tee -a /etc/sudoers > /dev/null

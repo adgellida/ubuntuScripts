@@ -2,4 +2,4 @@
 
 ####disableSudoWithoutPass
 
-cp /etc/sudoers.bak /etc/sudoers
+sudo cp /etc/sudoers.bak /etc/sudoers
