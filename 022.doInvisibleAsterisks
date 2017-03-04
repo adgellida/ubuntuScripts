@@ -2,6 +2,6 @@
 
 #http://www.linuxhispano.net/2013/09/05/mostrar-los-asteriscos-de-la-contrasena-en-un-terminal/
 
-# Return to default
+# Restore defaults
 
 sudo sed -i 's/env_reset,pwfeedback/env_reset/g' /etc/sudoers

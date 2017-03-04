@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#fixAStopJobIs RunningForSessionC2OfUser - http://unix.stackexchange.com/questions/273876/a-stop-job-is-running-for-session-c2-of-user
+
+# Restore defaults
+
+sudo sed -i 's/DefaultTimeoutStartSec=5s/DefaultTimeoutStartSec=90s/g' /etc/systemd/system.conf
+sudo sed -i 's/DefaultTimeoutStopSec=5s/DefaultTimeoutStopSec=90s/g' /etc/systemd/system.conf
+sudo systemctl daemon-reload
