@@ -2,4 +2,4 @@
 
 ####enableFirewall
 
-sudo enable ufw
+sudo ufw enable

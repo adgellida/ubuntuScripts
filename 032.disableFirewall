@@ -2,4 +2,4 @@
 
 ####disableFirewall
 
-sudo disable ufw
+sudo ufw disable
