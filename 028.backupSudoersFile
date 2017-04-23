@@ -2,4 +2,6 @@
 
 ####backupSudoersFile
 
-sudo cp /etc/sudoers /etc/sudoers.bak
+sudo cp /etc/sudoers ~/sudoers_`date +"%Y%m%d_%H%M%S"`.bak
+
+#sudo cp /etc/sudoers /etc/sudoers.bak
