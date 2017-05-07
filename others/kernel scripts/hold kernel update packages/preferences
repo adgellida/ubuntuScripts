@@ -1,3 +1,9 @@
-Package: linux-generic linux-headers-generic linux-image-generic linux-restricted-modules-generic
-Pin: version 3.16.0.34.35
+#copy this to /etc/apt/preferences
+
+Package: linux-generic linux-headers-generic linux-image-generic linux-restricted-modules-generic linux-tools-generic
+Pin: version 4.8.0.49.61
 Pin-Priority: 1001
+
+#Package: linux-tools-common linux-libc-dev
+#Pin: version 4.8.0.49.52
+#Pin-Priority: 1001

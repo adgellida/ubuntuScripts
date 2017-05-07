@@ -1,3 +1,9 @@
 #!/bin/bash
 
+sudo su
+
+#hold
 for i in $(dpkg -l "*$(uname -r)*" | grep image | awk '{print $2}'); do echo $i hold | dpkg --set-selections; done
+
+#unhold
+for i in $(dpkg -l "*$(uname -r)*" | grep image | awk '{print $2}'); do echo $i install | dpkg --set-selections; done
