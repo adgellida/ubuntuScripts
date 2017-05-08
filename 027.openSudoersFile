@@ -2,4 +2,4 @@
 
 ####openSudoersFile
 
-sudo gnome-open /etc/sudoers
+sudo xdg-open /etc/sudoers
