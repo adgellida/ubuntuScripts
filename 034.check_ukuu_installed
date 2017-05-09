@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $(dpkg-query -W -f='${Status}' ukuu 2>/dev/null | grep -c "ok installed") -eq 0 ]
+then
+  echo "You need ukuu, installing it..."
+  sleep 2
+  sh ~/.ubunsys/downloads/ubuntupackages-master/apps1/132.ukuu
+  echo "ukuu installed. Opening..."
+
+else echo "Opening ukuu..."
+  
+fi
+
+sleep 2
