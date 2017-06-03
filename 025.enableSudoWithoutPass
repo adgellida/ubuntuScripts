@@ -2,6 +2,8 @@
 
 ####enableSudoWithoutPass
 
+sudo cp /etc/sudoers /etc/sudoers.bak
+
 printf "\n" | sudo tee -a /etc/sudoers > /dev/null
 echo "##Added by ubunsys" | sudo tee -a /etc/sudoers > /dev/null
 echo "$USER ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers > /dev/null
