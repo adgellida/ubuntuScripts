@@ -1,0 +1,12 @@
+#!/bin/bash
+
+####disableLockScreen
+
+#https://ubuntu-mate.community/t/disable-keyring-for-ssh/9752/3
+#https://ubuntuforums.org/showthread.php?t=1003471
+#https://ubuntu-mate.community/t/how-to-disable-keyring-password-storage-for-chrome/2904
+#https://askubuntu.com/questions/867/how-can-i-stop-being-prompted-to-unlock-the-default-keyring-on-boot
+
+#gsettings set org.gnome.desktop.screensaver lock-enabled false
+gsettings set org.gnome.desktop.lockdown disable-lock-screen true
+gsettings set org.mate.desktop.lockdown disable-lock-screen true
