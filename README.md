@@ -9,7 +9,9 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Highly compatible with 16.04 (Xenial Xerus).
+Highly compatible with 17.04 (Zesty).
+
+**Used on [ubunsys](https://github.com/adgellida/ubunsys)**
 
 Instructions
 =============================================
