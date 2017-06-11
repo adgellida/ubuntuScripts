@@ -7,7 +7,7 @@
 FILE1=/etc/sudoers
 FILE2=/etc/sudoers.d/ubunsys_sudoers_addition
 
-LINE1='$USER ALL = NOPASSWD: ALL'
+LINE1="$USER ALL = NOPASSWD: ALL"
 
 if [ -f "$FILE2" ]
 then
