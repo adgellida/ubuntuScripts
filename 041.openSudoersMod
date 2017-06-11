@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####openSudoersMod
+
+sudo xdg-open /etc/sudoers.d/ubunsys_sudoers_addition
