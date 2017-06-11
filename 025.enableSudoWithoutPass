@@ -17,7 +17,7 @@ else
 	echo "$FILE2 not found."
 	#read -p "not found"
 	#sudo cp ~/.ubunsys/downloads/ubuntuScripts-master/others/sudoers/ubunsys_sudoers_addition /etc/sudoers.d/ubunsys_sudoers_addition
-	sudo grep -qF "$LINE1" "$FILE1"  || sudo printf "$LINE1" | sudo tee --append "$FILE2"
+	sudo grep -qF "$LINE1" "$FILE2"  || printf "$LINE1" | sudo tee --append "$FILE2"
 	##pkexec chown root:root "$FILE2"
 	##pkexec chmod 0440 "$FILE2"
 	#echo "$FILE2 not found."
