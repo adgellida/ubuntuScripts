@@ -9,10 +9,10 @@ FILE2=/etc/sudoers.d/ubunsys_sudoers_addition
 
 if [ -f "$FILE2" ]
 then
-	#echo "$FILE2 found."
+	echo "$FILE2 found."
 	#read -p "found"
 else
-	#echo "$FILE2 not found."
+	echo "$FILE2 not found."
 	#read -p "not found"
 	sudo cp ~/.ubunsys/downloads/ubuntuScripts-master/others/sudoers/ubunsys_sudoers_addition /etc/sudoers.d/ubunsys_sudoers_addition
 	pkexec chown root:root "$FILE2"

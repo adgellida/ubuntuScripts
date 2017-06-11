@@ -9,12 +9,12 @@ FILE2=/etc/sudoers.d/ubunsys_sudoers_addition
 
 if [ -f "$FILE2" ]
 then
-	#echo "$FILE2 found."
+	echo "$FILE2 found."
 	#read -p "found"
 	sudo rm "$FILE2"
 	#echo "$FILE2 found."
 	#read -p "found"	
 else
-	#echo "$FILE2 not found."
+	echo "$FILE2 not found."
 	#read -p "not found"
 fi
