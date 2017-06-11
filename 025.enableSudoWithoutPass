@@ -7,6 +7,8 @@
 FILE1=/etc/sudoers
 FILE2=/etc/sudoers.d/ubunsys_sudoers_addition
 
+LINE1='$USER ALL = NOPASSWD: ALL'
+
 if [ -f "$FILE2" ]
 then
 	echo "$FILE2 found."
@@ -14,7 +16,8 @@ then
 else
 	echo "$FILE2 not found."
 	#read -p "not found"
-	sudo cp ~/.ubunsys/downloads/ubuntuScripts-master/others/sudoers/ubunsys_sudoers_addition /etc/sudoers.d/ubunsys_sudoers_addition
+	#sudo cp ~/.ubunsys/downloads/ubuntuScripts-master/others/sudoers/ubunsys_sudoers_addition /etc/sudoers.d/ubunsys_sudoers_addition
+	sudo grep -qF "$LINE1" "$FILE1"  || sudo printf "$LINE1" | sudo tee --append "$FILE2"
 	##pkexec chown root:root "$FILE2"
 	##pkexec chmod 0440 "$FILE2"
 	#echo "$FILE2 not found."
