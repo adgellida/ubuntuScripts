@@ -2,14 +2,21 @@
 
 ####enableSudoWithoutPass
 
-sudo cp /etc/sudoers /etc/sudoers.bak
+#sudo cp /etc/sudoers /etc/sudoers.bak
 
-printf "\n" | sudo tee -a /etc/sudoers > /dev/null
-echo "##Added by ubunsys" | sudo tee -a /etc/sudoers > /dev/null
-echo "$USER ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers > /dev/null
-echo "Defaults	!authenticate" | sudo tee -a /etc/sudoers > /dev/null
+FILE1=/etc/sudoers
+FILE2=/etc/sudoers.d/ubunsys_sudoers_addition
 
-#sudo sed -i '$SUDO_USER ALL=(ALL:ALL) ALL' /etc/sudoers
-#sudo sed -i '/Defaults	!authenticate/d' /etc/sudoers
-#echo "$SUDO_USER ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers > /dev/null
-#echo "usuario ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers > /dev/null
+if [ -f "$FILE2" ]
+then
+	#echo "$FILE2 found."
+	#read -p "found"
+else
+	#echo "$FILE2 not found."
+	#read -p "not found"
+	sudo cp ~/.ubunsys/downloads/ubuntuScripts-master/others/sudoers/ubunsys_sudoers_addition /etc/sudoers.d/ubunsys_sudoers_addition
+	pkexec chown root:root "$FILE2"
+	pkexec chmod 0440 "$FILE2"
+	#echo "$FILE2 not found."
+	#read -p "not found"
+fi

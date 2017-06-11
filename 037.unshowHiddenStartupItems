@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####unshowHiddenStartupItems
+
+sudo sed –i ‘s/NoDisplay=false/NoDisplay=true/g’ /etc/xdg/autostart/*.desktop

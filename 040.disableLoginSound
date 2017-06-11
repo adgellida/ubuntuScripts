@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####disableLoginSound
+
+mv /usr/share/sounds/ubuntu/stereo/system-ready.ogg /usr/share/sounds/ubuntu/stereo/system-ready.ogg_ubunsys

@@ -2,4 +2,19 @@
 
 ####disableSudoWithoutPass
 
-sudo cp /etc/sudoers.bak /etc/sudoers
+#sudo cp /etc/sudoers.bak /etc/sudoers
+
+FILE1=/etc/sudoers
+FILE2=/etc/sudoers.d/ubunsys_sudoers_addition
+
+if [ -f "$FILE2" ]
+then
+	#echo "$FILE2 found."
+	#read -p "found"
+	sudo rm "$FILE2"
+	#echo "$FILE2 found."
+	#read -p "found"	
+else
+	#echo "$FILE2 not found."
+	#read -p "not found"
+fi
