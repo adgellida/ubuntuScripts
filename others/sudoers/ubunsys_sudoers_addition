@@ -1,2 +1,1 @@
-usuario ALL=(ALL:ALL) ALL
-Defaults !authenticate
+usuario    ALL = NOPASSWD: ALL
