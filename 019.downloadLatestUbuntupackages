@@ -6,5 +6,5 @@ mkdir -p ~/.ubunsys/downloads
 wget https://github.com/adgellida/ubuntupackages/archive/master.zip -O ~/.ubunsys/downloads/master.zip
 
 unzip ~/.ubunsys/downloads/master.zip -d ~/.ubunsys/downloads
-sudo chmod 777 -R ~/.ubunsys/downloads/ubuntupackages-master
+chmod 777 -R ~/.ubunsys/downloads/ubuntupackages-master
 rm ~/.ubunsys/downloads/master.zip
