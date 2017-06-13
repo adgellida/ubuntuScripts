@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####openSourcesList
+
+sudo xdg-open /etc/apt/sources.list
