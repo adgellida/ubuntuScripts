@@ -2,9 +2,7 @@
 
 #### downloadLatestUbuntupackages
 
-mkdir -p ~/.ubunsys/downloads
-wget https://github.com/adgellida/ubuntupackages/archive/master.zip -O ~/.ubunsys/downloads/master.zip
+test -f ~/.ubunsys || mkdir ~/.ubunsys
+test -f ~/.ubunsys/downloads || mkdir ~/.ubunsys/downloads
 
-unzip ~/.ubunsys/downloads/master.zip -d ~/.ubunsys/downloads
-chmod 777 -R ~/.ubunsys/downloads/ubuntupackages-master
-rm ~/.ubunsys/downloads/master.zip
+wget https://github.com/adgellida/ubuntupackages/archive/master.zip -O ~/.ubunsys/master.zip && rm -Rf ~/.ubunsys/downloads/ubuntupackages-master && unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads && chmod 777 -R ~/.ubunsys/downloads/ubuntupackages-master && rm ~/.ubunsys/master.zip && echo Download ok. || echo Error Downloading. Holding your ubuntupackages. && sleep 3
