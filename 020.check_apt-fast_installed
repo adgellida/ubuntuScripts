@@ -9,9 +9,9 @@ then
   sudo rm /etc/apt/sources.list.d/saiarcot895-ubuntu-myppa-zesty.list
   sudo rm /etc/apt/sources.list.d/saiarcot895-ubuntu-myppa-zesty.list.save
   sh ~/.ubunsys/downloads/ubuntupackages-master/apps1/004.apt-fast
-  echo "apt-fast installed, You're ready to rock on!! 3/3"
+  echo "apt-fast installed, You're ready to rock on!! 3/3 ok"
 
-else echo "apt-fast installed, not changes necessary. You're ready to rock on!! 3/3"
+else echo "apt-fast installed, not changes necessary. You're ready to rock on!! 3/3 ok"
   
 fi
 
