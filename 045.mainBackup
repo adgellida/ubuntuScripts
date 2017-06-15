@@ -4,22 +4,22 @@
 
 ####backupSources.List
 
-test -f ~/.ubunsys/backups/main/sources.list || mkdir ~/.ubunsys/backups/main/sources.list
-sudo cp /etc/apt/sources.list ~/.ubunsys/backups/main/sources.list/sources.list
+test -d ~/.ubunsys/backups/main || mkdir -p ~/.ubunsys/backups/main
+sudo cp /etc/apt/sources.list ~/.ubunsys/backups/main/sources.list
 
 #sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
 ####backupSudoers
 
-test -f ~/.ubunsys/backups/main/sudoers || mkdir ~/.ubunsys/backups/main/sudoers
-sudo cp /etc/sudoers ~/.ubunsys/backups/main/sudoersFiles/sudoers
+test -d ~/.ubunsys/backups/main || mkdir -p ~/.ubunsys/backups/main
+sudo cp /etc/sudoers ~/.ubunsys/backups/main/sudoers
 
 #sudo cp /etc/sudoers /etc/sudoers.bak
 
 ####backupTemplates
 
-test -d ~/.ubunsys/backups/main/Plantillas || mkdir ~/.ubunsys/backups/main/Plantillas
+test -d ~/.ubunsys/backups/main/Plantillas || mkdir -p ~/.ubunsys/backups/main/Plantillas
 sudo cp ~/Plantillas/* ~/.ubunsys/backups/main/Plantillas
 
-test -d ~/.ubunsys/backups/main/Templates || mkdir ~/.ubunsys/backups/main/Templates
+test -d ~/.ubunsys/backups/main/Templates || mkdir -p ~/.ubunsys/backups/main/Templates
 sudo cp ~/Templates/* ~/.ubunsys/backups/main/Templates

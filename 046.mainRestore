@@ -4,13 +4,13 @@
 
 ####restoreSources.List
 
-test -f ~/.ubunsys/backups/main/sources.list || sudo cp ~/.ubunsys/backups/main/sources.list/sources.list /etc/apt/sources.list
+test -f ~/.ubunsys/backups/main/sources.list || sudo cp ~/.ubunsys/backups/main/sources.list /etc/apt/sources.list
 
 #sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
 ####restoreSudoers
 
-test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoersFiles/sudoers /etc/sudoers 
+test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoers /etc/sudoers 
 
 #sudo cp /etc/sudoers /etc/sudoers.bak
 
