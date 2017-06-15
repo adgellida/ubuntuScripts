@@ -16,6 +16,6 @@ test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoe
 
 ####restoreTemplates
 
-test -d ~/.ubunsys/backups/main/Plantillas || sudo cp ~/.ubunsys/backups/main/Plantillas ~/Plantillas/*
+test -d ~/.ubunsys/backups/main/Plantillas || sudo cp ~/.ubunsys/backups/main/Plantillas ~/Plantillas/* 2>/dev/null || :
 
-test -d ~/.ubunsys/backups/main/Templates || sudo cp ~/.ubunsys/backups/main/Templates ~/Templates/*
+test -d ~/.ubunsys/backups/main/Templates || sudo cp ~/.ubunsys/backups/main/Templates ~/Templates/* 2>/dev/null || :

@@ -19,7 +19,7 @@ sudo cp /etc/sudoers ~/.ubunsys/backups/main/sudoers
 ####backupTemplates
 
 test -d ~/.ubunsys/backups/main/Plantillas || mkdir -p ~/.ubunsys/backups/main/Plantillas
-sudo cp ~/Plantillas/* ~/.ubunsys/backups/main/Plantillas
+sudo cp ~/Plantillas/* ~/.ubunsys/backups/main/Plantillas 2>/dev/null || :
 
 test -d ~/.ubunsys/backups/main/Templates || mkdir -p ~/.ubunsys/backups/main/Templates
-sudo cp ~/Templates/* ~/.ubunsys/backups/main/Templates
+sudo cp ~/Templates/* ~/.ubunsys/backups/main/Templates 2>/dev/null || :
