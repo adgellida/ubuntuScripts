@@ -2,7 +2,7 @@
 
 #### downloadLatestUbuntuscripts
 
-test -f ~/.ubunsys || mkdir ~/.ubunsys # mkdir -p ~/.ubunsys
-test -f ~/.ubunsys/downloads || mkdir ~/.ubunsys/downloads
+test -f ~/.ubunsys || mkdir -p ~/.ubunsys
+test -f ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads
 
-wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/master.zip && rm -Rf ~/.ubunsys/downloads/ubuntuScripts-master && unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads && chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master && rm ~/.ubunsys/master.zip && echo Download ok. || echo Error Downloading. Holding your scripts. && sleep 3
+wget https://github.com/adgellida/ubuntuScripts/archive/master.zip -O ~/.ubunsys/master.zip && rm -Rf ~/.ubunsys/downloads/ubuntuScripts-master && unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads && chmod 777 -R ~/.ubunsys/downloads/ubuntuScripts-master && rm ~/.ubunsys/master.zip && echo Download ok. || echo Error Downloading. Holding your scripts. && sleep 2
