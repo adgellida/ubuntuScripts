@@ -2,4 +2,5 @@
 
 ####openSudoersMod
 
-sudo xdg-open /etc/sudoers.d/ubunsys_sudoers_addition
+#sudo xdg-open /etc/sudoers.d/ubunsys_sudoers_addition
+pkexec nano /etc/sudoers.d/ubunsys_sudoers_addition

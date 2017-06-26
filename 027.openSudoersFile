@@ -2,4 +2,5 @@
 
 ####openSudoersFile
 
-sudo xdg-open /etc/sudoers
+#sudo xdg-open /etc/sudoers
+pkexec nano /etc/sudoers

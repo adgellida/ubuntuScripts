@@ -3,6 +3,7 @@
 ####backupSudoersFile
 
 test -d ~/.ubunsys/backups/sudoersFiles || mkdir ~/.ubunsys/backups/sudoersFiles
-sudo cp /etc/sudoers ~/.ubunsys/backups/sudoersFiles/sudoers_`date +"%Y%m%d_%H%M%S"`.bak
+#sudo cp /etc/sudoers ~/.ubunsys/backups/sudoersFiles/sudoers_`date +"%Y%m%d_%H%M%S"`.bak
+pkexec cp /etc/sudoers ~/.ubunsys/backups/sudoersFiles/sudoers_`date +"%Y%m%d_%H%M%S"`.bak
 
 #sudo cp /etc/sudoers /etc/sudoers.bak
