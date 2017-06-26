@@ -2,4 +2,5 @@
 
 ####openSourcesList
 
-sudo xdg-open /etc/apt/sources.list
+#sudo xdg-open /etc/apt/sources.list
+pkexec nano /etc/apt/sources.list
