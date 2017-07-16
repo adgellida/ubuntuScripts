@@ -6,5 +6,5 @@ test -d ~/.ubunsys/backups/scriptsFiles || mkdir ~/.ubunsys/backups/scriptsFiles
 #sudo cp /etc/sudoers ~/.ubunsys/backups/sudoersFiles/sudoers_`date +"%Y%m%d_%H%M%S"`.bak
 sed -i '1i #!/bin/bash' ~/.ubunsys/files/packagesToInstall.sh
 cp ~/.ubunsys/files/packagesToInstall.sh ~/.ubunsys/backups/scriptsFiles/packagesToInstall_`date +"%Y%m%d_%H%M%S"`.bak
-
+sudo chmod 777 cp ~/.ubunsys/backups/scriptsFiles/packagesToInstall_`date +"%Y%m%d_%H%M%S"`.bak
 #sudo cp /etc/sudoers /etc/sudoers.bak
