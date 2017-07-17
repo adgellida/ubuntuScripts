@@ -1,0 +1,6 @@
+#!/bin/bash
+
+####openSudoersAllMod
+
+#sudo xdg-open /etc/sudoers.d/ubunsys_sudoers_addition
+pkexec nano /etc/sudoers.d/all_sudoers_addition

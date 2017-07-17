@@ -1,11 +1,11 @@
 #!/bin/bash
 
-####enableSudoWithoutPass
+####enableSudoWithoutPassAll
 
 #sudo cp /etc/sudoers /etc/sudoers.bak
 
 FILE1=/etc/sudoers
-FILE2=/etc/sudoers.d/ubunsys_sudoers_addition
+FILE2=/etc/sudoers.d/all_sudoers_addition
 
 LINE1="$USER ALL = NOPASSWD: ALL"
 
