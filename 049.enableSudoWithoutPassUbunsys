@@ -28,4 +28,4 @@ fi
 ##pkexec visudo -f /etc/sudoers.d/ubunsys_sudoers_addition
 ##rm /etc/sudoers.d/ubunsys_sudoers_addition.tmp
 
-mv /etc/sudoers.d/ubunsys_sudoers_addition.tmp /etc/sudoers.d/ubunsys_sudoers_addition
+sudo mv /etc/sudoers.d/ubunsys_sudoers_addition.tmp /etc/sudoers.d/ubunsys_sudoers_addition
