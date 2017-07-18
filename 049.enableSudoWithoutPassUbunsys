@@ -23,3 +23,5 @@ else
 	#echo "$FILE2 not found."
 	#read -p "not found"
 fi
+
+pkexec visudo -f /etc/sudoers.d/ubunsys_sudoers_addition
