@@ -8,5 +8,5 @@
 #https://askubuntu.com/questions/867/how-can-i-stop-being-prompted-to-unlock-the-default-keyring-on-boot
 
 #gsettings set org.gnome.desktop.screensaver lock-enabled false
-gsettings set org.gnome.desktop.lockdown disable-lock-screen true
-gsettings set org.mate.desktop.lockdown disable-lock-screen true
+dconf write /org/mate/desktop/lockdown/disable-lock-screen true
+dconf write /org/gnome/desktop/lockdown/disable-lock-screen true
