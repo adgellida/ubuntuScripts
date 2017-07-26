@@ -5,4 +5,8 @@
 test -d ~/.ubunsys || mkdir -p ~/.ubunsys
 test -d ~/.ubunsys/downloads || mkdir -p ~/.ubunsys/downloads
 
+echo Updating ubuntupackages. Please wait... Stage 2/3
+sleep 2
+echo " "
+
 wget https://github.com/adgellida/ubuntupackages/archive/master.zip -O ~/.ubunsys/master.zip && rm -Rf ~/.ubunsys/downloads/ubuntupackages-master && unzip ~/.ubunsys/master.zip -d ~/.ubunsys/downloads &>/dev/null && chmod 777 -R ~/.ubunsys/downloads/ubuntupackages-master && rm ~/.ubunsys/master.zip && echo ubuntupackages downloaded ok. 2/3 ok || echo Error downloading. Holding your ubuntupackages version. 2/3 fail && sleep 1

@@ -10,8 +10,8 @@ then
   sh ~/.ubunsys/downloads/ubuntupackages-master/apps1/apt-fast
   echo "apt-fast installed, You're ready to rock on!! 3/3 ok"
 
-else echo "apt-fast installed, not changes necessary. You're ready to rock on!! 3/3 ok"
+else #echo "apt-fast installed, not changes necessary. You're ready to rock on!! 3/3 ok"
   
 fi
 
-sleep 2
+#sleep 2
