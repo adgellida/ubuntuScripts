@@ -22,6 +22,13 @@ Important
 * The desktop environment recommended tested right now is to use MATE desktop.
 * If you want to know more, go to the wiki of this repo [here](https://github.com/adgellida/ubuntuScripts/wiki).
 
+Dependencies
+=============================================
+
+Through PPA:
+
+`apt-fast`
+
 TO DO
 =============================================
 * Clean all
