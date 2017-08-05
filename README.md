@@ -14,7 +14,25 @@ Highly compatible with 17.04 (Zesty).
 Instructions
 =============================================
 
-Remember to add exec permissions to all scripts if don't have it!
+Is more desirable that you use "Scripts Manager" functionality of [ubunsys](https://github.com/adgellida/ubunsys) to execute these scripts.
+
+Nowadays if you want to do it "manual way"...
+
+**Manual**
+
+Read the code and do your modifications.
+
+Then do these basics steps:
+
+1. Add exec permissions to all scripts!
+
+`sudo chmod 777 archiveName`
+
+`sudo chmod 777 -R folderName`
+
+`sudo chmod 777 -R ./ubuntuScripts-master`
+
+2. Go to your selected script, execute it or modify it.
 	
 Important
 =============================================
