@@ -1,13 +1,13 @@
 #!/bin/bash
 
-####enableSudoWithoutPass
+####enableSudoWithoutPassAll
 
 #sudo cp /etc/sudoers /etc/sudoers.bak
 
 FILE1=/etc/sudoers
-FILE2=/etc/sudoers.d/ubunsys_sudoers_addition
+FILE2=/etc/sudoers.d/all_sudoers_addition
 
-LINE1="$USER ALL = NOPASSWD: /usr/bin/ubunsys\n\n#Save this file as ubunsys_sudoers_addition,nor ubunsys_sudoers_addition.tmp\n#ubunsys_sudoers_addition.tmp will be erased"
+LINE1="$USER ALL = NOPASSWD: ALL"
 
 if [ -f "$FILE2" ]
 then
@@ -23,6 +23,3 @@ else
 	#echo "$FILE2 not found."
 	#read -p "not found"
 fi
-
-pkexec visudo -f /etc/sudoers.d/ubunsys_sudoers_addition
-rm /etc/sudoers.d/ubunsys_sudoers_addition.tmp

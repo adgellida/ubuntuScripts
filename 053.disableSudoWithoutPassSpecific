@@ -1,0 +1,23 @@
+#!/bin/bash
+
+####disableSudoWithoutPassSpecific
+
+echo "Put the name of the app to remove:"
+
+read appName
+
+FILE=/etc/sudoers.d/$appName
+
+#fileName="${fileName}_sudoers_addition"
+
+if [ -f "$FILE" ]; then
+   echo "File $FILE exists"
+   echo "Put sudo pass to remove sudo without pass specific on this app:"
+   pkexec rm /etc/sudoers.d/$appName
+   echo "$appName removed correctly. Presh ENTER"
+   read
+else
+   echo "File $FILE does not exist"
+   echo "Put the correct name next time. Presh ENTER"
+   read
+fi

@@ -2,24 +2,16 @@
 
 ####enableSudoWithoutPassAll
 
-#sudo cp /etc/sudoers /etc/sudoers.bak
+FILE=/etc/sudoers.d/all_sudoers_addition
 
-FILE1=/etc/sudoers
-FILE2=/etc/sudoers.d/all_sudoers_addition
-
-LINE1="$USER ALL = NOPASSWD: ALL"
-
-if [ -f "$FILE2" ]
-then
-	echo "$FILE2 found."
-	#read -p "found"
+if [ -f "$FILE" ]; then
+   echo "File $FILE exists, nothing to do. Presh ENTER"
+   read
 else
-	echo "$FILE2 not found."
-	#read -p "not found"
-	#sudo cp ~/.ubunsys/downloads/ubuntuScripts-master/others/sudoers/ubunsys_sudoers_addition /etc/sudoers.d/ubunsys_sudoers_addition
-	sudo grep -qF "$LINE1" "$FILE2"  || printf "$LINE1" | sudo tee --append "$FILE2"
-	##pkexec chown root:root "$FILE2"
-	##pkexec chmod 0440 "$FILE2"
-	#echo "$FILE2 not found."
-	#read -p "not found"
+   echo "File $FILE does not exist, applying changes"
+   echo "Put sudo pass:"
+   LINE="$USER ALL = NOPASSWD: ALL"
+   pkexec sh -c "echo $LINE > $FILE"
+   echo "sudo without pass - all added correctly. Presh ENTER"
+   read
 fi

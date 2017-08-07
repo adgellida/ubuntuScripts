@@ -1,0 +1,28 @@
+#!/bin/bash
+
+####enableSudoWithoutPass
+
+#sudo cp /etc/sudoers /etc/sudoers.bak
+
+FILE1=/etc/sudoers
+FILE2=/etc/sudoers.d/ubunsys
+
+LINE1="$USER ALL = NOPASSWD: /usr/bin/ubunsys\n\n#Save this file as ubunsys, nor ubunsys.tmp\n#ubunsys.tmp will be erased"
+
+if [ -f "$FILE2" ]
+then
+	echo "$FILE2 found."
+	#read -p "found"
+else
+	echo "$FILE2 not found."
+	#read -p "not found"
+	#sudo cp ~/.ubunsys/downloads/ubuntuScripts-master/others/sudoers/ubunsys_sudoers_addition /etc/sudoers.d/ubunsys_sudoers_addition
+	sudo grep -qF "$LINE1" "$FILE2"  || printf "$LINE1" | sudo tee --append "$FILE2"
+	##pkexec chown root:root "$FILE2"
+	##pkexec chmod 0440 "$FILE2"
+	#echo "$FILE2 not found."
+	#read -p "not found"
+fi
+
+pkexec visudo -f /etc/sudoers.d/ubunsys
+rm /etc/sudoers.d/ubunsys.tmp

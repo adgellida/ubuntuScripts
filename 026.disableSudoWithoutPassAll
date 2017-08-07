@@ -2,19 +2,17 @@
 
 ####disableSudoWithoutPassAll
 
-#sudo cp /etc/sudoers.bak /etc/sudoers
+FILE=/etc/sudoers.d/all_sudoers_addition
 
-FILE1=/etc/sudoers
-FILE2=/etc/sudoers.d/all_sudoers_addition
+#fileName="${fileName}_sudoers_addition"
 
-if [ -f "$FILE2" ]
-then
-	echo "$FILE2 found."
-	#read -p "found"
-	sudo rm "$FILE2"
-	#echo "$FILE2 found."
-	#read -p "found"	
+if [ -f "$FILE" ]; then
+   echo "File $FILE exists"
+   echo "Put sudo pass to remove sudo without pass - all:"
+   pkexec rm "$FILE"
+   echo "sudo without pass - all removed correctly. Presh ENTER"
+   read
 else
-	echo "$FILE2 not found."
-	#read -p "not found"
+   echo "File $FILE does not exist, do nothing. Presh ENTER"
+   read
 fi

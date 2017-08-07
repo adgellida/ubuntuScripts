@@ -1,0 +1,31 @@
+#!/bin/bash
+
+####enableSudoWithoutPass
+
+#sudo cp /etc/sudoers /etc/sudoers.bak
+
+#FILE1=/etc/sudoers.d/apt-fast
+
+#LINE1="usuario ALL = NOPASSWD: /usr/sbin/apt-fast"
+
+#LINE1="$USER ALL = NOPASSWD: /usr/sbin/apt-fast\n\n#Save this file as apt-fast_sudoers_addition,nor apt-fast_sudoers_addition.tmp\n#apt-fast_sudoers_addition.tmp will be erased"
+
+#if [ -f "$FILE1" ]
+#then
+#	echo "$FILE1 found."
+	#read -p "found"
+#else
+#	echo "$FILE1 not found."
+	#read -p "not found"
+	#sudo cp ~/.ubunsys/downloads/ubuntuScripts-master/others/sudoers/ubunsys_sudoers_addition /etc/sudoers.d/ubunsys_sudoers_addition
+	#sudo grep -qF "$LINE1" "$FILE1"  || sudo printf "$LINE1" | sudo tee --append "$FILE1"
+	##pkexec chown root:root "$FILE2"
+	##pkexec chmod 0440 "$FILE2"
+	#echo "$FILE2 not found."
+	#read -p "not found"
+#fi
+
+#pkexec visudo -f /etc/sudoers.d/apt-fast_sudoers_addition
+#rm /etc/sudoers.d/apt-fast_sudoers_addition.tmp
+
+#read

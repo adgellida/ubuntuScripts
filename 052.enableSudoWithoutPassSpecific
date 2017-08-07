@@ -1,0 +1,27 @@
+#!/bin/bash
+
+####enableSudoWithoutPassSpecific
+
+echo "Put the name of the app:"
+
+read appName
+
+FILE=/etc/sudoers.d/$appName
+
+#fileName="${fileName}_sudoers_addition"
+
+if [ -f "$FILE" ]; then
+    echo "File $FILE exists, nothing to do. Presh ENTER"
+    read
+else
+	echo "File $FILE does not exist, all correct"
+	echo "Put the path of the app:"
+
+	read path
+
+	LINE="$USER ALL = NOPASSWD: $path"
+	echo "Put sudo pass:"
+	pkexec sh -c "echo $LINE > /etc/sudoers.d/$appName"
+	echo "sudo without pass specific on $appName added correctly. Presh ENTER"
+	read
+fi
