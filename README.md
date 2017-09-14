@@ -1,6 +1,18 @@
 <img src="http://2.bp.blogspot.com/-0PGGE5x_Bro/UIIlk9owRYI/AAAAAAAAAnk/M7ezExKcC4w/s1600/shell-linux-hackem.png" width="80"> ubuntuScripts
 =============================================
 
+<p align="center">
+    <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/ubuntuScripts.svg" alt="stars"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubuntuScripts.svg" alt="forks"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubuntuScripts.svg" alt="open issues"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubuntuScripts/total.svg" alt="total downloads"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubuntuScripts/v2017.09.09/total.svg" alt="total downloads latest release"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-no releases-blue.svg" alt="latest release"></a> <img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
+</p>
+
 A collection of ubuntu scripts to fix problems and add functionalities.
 
 Compatible with any Debian based system:
