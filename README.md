@@ -9,7 +9,7 @@
     <a href="https://github.com/adgellida/ubuntuScripts/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubuntuScripts/total.svg" alt="total downloads"></a>
     <a href="https://github.com/adgellida/ubuntuScripts/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubuntuScripts/v2017.09.09/total.svg" alt="total downloads latest release"></a>
     <a href="https://github.com/adgellida/ubuntuScripts/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-no releases-blue.svg" alt="latest release"></a>
-    <a href="https://github.com/adgellida/ubuntuScripts/commits/master" target="_blank"><img src="https://img.shields.io/badge/maintained-paused-orange.svg" alt="maintained"></a>
+    <a href="https://github.com/adgellida/ubuntuScripts/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
     <a href="https://github.com/adgellida/ubuntuScripts/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/ubuntuScripts/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
