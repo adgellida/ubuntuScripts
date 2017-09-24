@@ -2,5 +2,5 @@
 
 ####enableUpdateNotification
 
-test -d ~/.config/autostart-disabled || mkdir ~/.config/autostart-disabled
+test -d ~/.config/autostart-disabled || mkdir -p ~/.config/autostart-disabled
 cp ~/.config/autostart/update-notifier.desktop ~/.config/autostart-disabled/update-notifier.desktop || rm ~/.config/autostart/update-notifier.desktop
