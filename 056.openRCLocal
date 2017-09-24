@@ -1,0 +1,6 @@
+#!/bin/bash
+
+####openSudoersFile
+
+#sudo xdg-open /etc/sudoers
+pkexec nano /etc/sudoers
