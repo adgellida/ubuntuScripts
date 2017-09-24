@@ -1,0 +1,6 @@
+#!/bin/bash
+
+####disableUpdateNotification
+
+test -d ~/.config/autostart-disabled || mkdir ~/.config/autostart-disabled
+cp ~/.config/autostart-disabled/update-notifier.desktop ~/.config/autostart/update-notifier.desktop || rm ~/.config/autostart-disabled/update-notifier.desktop
