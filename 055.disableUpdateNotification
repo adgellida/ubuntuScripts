@@ -3,6 +3,9 @@
 ####disableUpdateNotification
 
 test -d ~/.config/autostart-disabled || mkdir -p ~/.config/autostart-disabled
-if cp ~/.config/autostart-disabled/update-notifier.desktop ~/.config/autostart/update-notifier.desktop then;
-rm ~/.config/autostart-disabled/update-notifier.desktop
+
+if cp ~/.config/autostart-disabled/update-notifier.desktop ~/.config/autostart/update-notifier.desktop; then
+    rm ~/.config/autostart-disabled/update-notifier.desktop & echo 'Disabled ok\n'
+else
+    echo 'Failed to disable or disabled already\n'
 fi
