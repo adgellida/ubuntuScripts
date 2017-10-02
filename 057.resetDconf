@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####resetDconf
+
+sudo dconf reset -f /
