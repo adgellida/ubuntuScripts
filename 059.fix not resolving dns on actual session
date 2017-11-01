@@ -1,0 +1,6 @@
+﻿
+#sudo dhclient -r interfacename
+#sudo dhclient interfacename
+
+sudo dhclient -r enp3s0
+sudo dhclient enp3s0
