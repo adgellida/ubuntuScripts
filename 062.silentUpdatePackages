@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Script to automatically check for and install updates via apt-get if computer
+#	has been idle for at least an hour
+
+#idletime=$(xprintidle);
+#idleminimum="3600000";
+
+#if [[ "$idletime" -gt "$idleminimum" ]]; then
+	notify-send -t 10000 "sup Checking for updates..."
+	sudo apt-fast -y update
+	sudo apt-fast -y upgrade
+	notify-send -t 3600000 "sup System updated..."
+#fi
