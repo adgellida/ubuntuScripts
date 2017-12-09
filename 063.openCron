@@ -1,0 +1,19 @@
+#!/bin/bash
+
+####openCron
+
+actualUser="$(whoami)"
+
+echo "Put the name of the user:"
+echo "If you put root different your actual will be edited:"
+read userName
+
+if [ "$userName" = "root" ]
+then
+	#sudo nano /var/spool/cron/crontabs/root
+	sudo crontab -e
+else
+	#nano /var/spool/cron/crontabs/'$userName'
+	#nano /var/spool/cron/crontabs/usuario
+	crontab -e
+fi

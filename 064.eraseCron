@@ -1,0 +1,19 @@
+#!/bin/bash
+
+####eraseCron
+
+actualUser="$(whoami)"
+
+echo "Put the name of the user"
+echo "If you put root different your actual will be deleted:"
+read userName
+
+if [ "$userName" = "root" ]
+then
+	sudo crontab -r
+else
+	crontab -r
+	echo "crontabs for $actualUser deleted"
+	echo "Presh enter"
+	read
+fi
