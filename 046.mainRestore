@@ -33,9 +33,9 @@ test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoe
 
 ####6.templates
 
-test -d ~/.ubunsys/backups/main/Plantillas || sudo cp ~/.ubunsys/backups/main/Plantillas ~/Plantillas/* 2>/dev/null || :
+test -d ~/.ubunsys/backups/main/Plantillas || cp ~/.ubunsys/backups/main/Plantillas ~/Plantillas/* 2>/dev/null || :
 
-test -d ~/.ubunsys/backups/main/Templates || sudo cp ~/.ubunsys/backups/main/Templates ~/Templates/* 2>/dev/null || :
+test -d ~/.ubunsys/backups/main/Templates || cp ~/.ubunsys/backups/main/Templates ~/Templates/* 2>/dev/null || :
 
 
 
