@@ -4,7 +4,7 @@
 
 actualUser="$(whoami)"
 
-echo "Put the name of the user"
+echo "Put the name of the user."
 echo "If you put root different your actual will be deleted:"
 read userName
 
