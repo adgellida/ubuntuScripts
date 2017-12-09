@@ -2,20 +2,43 @@
 
 ##RESTORE
 
-####restoreSources.List
+####Restore content
+
+#
+
+####1.sources.list.d
+
+test -f ~/.ubunsys/backups/main/sources.list.d || sudo cp -r ~/.ubunsys/backups/main/sources.list.d/* /etc/apt/sources.list.d
+
+
+####2.sources.list
 
 test -f ~/.ubunsys/backups/main/sources.list || sudo cp ~/.ubunsys/backups/main/sources.list /etc/apt/sources.list
-
 #sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
-####restoreSudoers
+####3.sudoers.d
 
-test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoers /etc/sudoers 
-
+test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoers.d/* /etc/sudoers.d
 #sudo cp /etc/sudoers /etc/sudoers.bak
 
-####restoreTemplates
+
+####4.hosts
+
+test -f ~/.ubunsys/backups/main/hosts || sudo cp ~/.ubunsys/backups/main/hosts /etc/hosts
+
+####5.sudoers
+
+test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoers /etc/sudoers 
+#sudo cp /etc/sudoers /etc/sudoers.bak
+
+####6.templates
 
 test -d ~/.ubunsys/backups/main/Plantillas || sudo cp ~/.ubunsys/backups/main/Plantillas ~/Plantillas/* 2>/dev/null || :
 
 test -d ~/.ubunsys/backups/main/Templates || sudo cp ~/.ubunsys/backups/main/Templates ~/Templates/* 2>/dev/null || :
+
+
+
+####7.rc.local
+
+test -f ~/.ubunsys/backups/main/rc.local || sudo cp ~/.ubunsys/backups/main/rc.local /etc/rc.local

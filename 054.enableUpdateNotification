@@ -3,9 +3,10 @@
 ####enableUpdateNotification
 
 test -d ~/.config/autostart-disabled || mkdir -p ~/.config/autostart-disabled
+sudo test -d /etc/xdg/autostart-disabled || sudo mkdir -p /etc/xdg/autostart-disabled
 
-if  cp ~/.config/autostart-disabled/update-notifier.desktop ~/.config/autostart/update-notifier.desktop; then
-    rm ~/.config/autostart-disabled/update-notifier.desktop && echo 'Enabled ok'
-else
-    echo 'Failed to enable or enabled already'
-fi
+cp ~/.config/autostart-disabled/update-notifier.desktop ~/.config/autostart/update-notifier.desktop
+rm ~/.config/autostart-disabled/update-notifier.desktop && echo 'Enabled ok'
+
+sudo cp /etc/xdg/autostart-disabled/update-notifier.desktop /etc/xdg/autostart/update-notifier.desktop
+sudo rm /etc/xdg/autostart-disabled/update-notifier.desktop && echo 'Enabled ok'

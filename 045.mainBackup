@@ -2,24 +2,43 @@
 
 ##BACKUP
 
-####backupSources.List
+####Create main folder
 
 test -d ~/.ubunsys/backups/main || mkdir -p ~/.ubunsys/backups/main
-sudo cp /etc/apt/sources.list ~/.ubunsys/backups/main/sources.list
 
+####1.sources.list.d
+
+test -d ~/.ubunsys/backups/main/sources.list.d || mkdir -p ~/.ubunsys/backups/main/sources.list.d
+sudo cp -r /etc/apt/sources.list.d/* ~/.ubunsys/backups/main/sources.list.d
+
+####2.sources.list
+
+sudo cp /etc/apt/sources.list ~/.ubunsys/backups/main/sources.list
 #sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
-####backupSudoers
+####3.sudoers.d
 
-test -d ~/.ubunsys/backups/main || mkdir -p ~/.ubunsys/backups/main
-sudo cp /etc/sudoers ~/.ubunsys/backups/main/sudoers
-
+test -d ~/.ubunsys/backups/main/sudoers.list.d || mkdir -p ~/.ubunsys/backups/main/sudoers.list.d
+sudo cp /etc/sudoers.d/* ~/.ubunsys/backups/main/sudoers.d
 #sudo cp /etc/sudoers /etc/sudoers.bak
 
-####backupTemplates
+####4.hosts
+
+sudo cp /etc/hosts ~/.ubunsys/backups/main/hosts
+
+####5.sudoers
+
+sudo cp /etc/sudoers ~/.ubunsys/backups/main/sudoers
+#sudo cp /etc/sudoers /etc/sudoers.bak
+
+####6.templates
 
 test -d ~/.ubunsys/backups/main/Plantillas || mkdir -p ~/.ubunsys/backups/main/Plantillas
 sudo cp ~/Plantillas/* ~/.ubunsys/backups/main/Plantillas 2>/dev/null || :
 
 test -d ~/.ubunsys/backups/main/Templates || mkdir -p ~/.ubunsys/backups/main/Templates
 sudo cp ~/Templates/* ~/.ubunsys/backups/main/Templates 2>/dev/null || :
+
+####7.rc.local
+
+sudo cp /etc/rc.local ~/.ubunsys/backups/main/rc.local
