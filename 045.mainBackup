@@ -6,6 +6,10 @@
 
 test -d ~/.ubunsys/backups/main || mkdir -p ~/.ubunsys/backups/main
 
+#Erase
+
+sudo rm -r ~/.ubunsys/backups/main/*
+
 ####1.sources.list.d
 
 test -d ~/.ubunsys/backups/main/sources.list.d || mkdir -p ~/.ubunsys/backups/main/sources.list.d
@@ -42,3 +46,11 @@ cp -r ~/Templates/* ~/.ubunsys/backups/main/Templates 2>/dev/null || :
 ####7.rc.local
 
 sudo cp /etc/rc.local ~/.ubunsys/backups/main/rc.local
+
+#Zip all
+test -d ~/.ubunsys/backups/lots || mkdir -p ~/.ubunsys/backups/lots
+sudo zip -r ~/.ubunsys/backups/lots/main_`date +"%Y%m%d_%H%M%S"`.zip ~/.ubunsys/backups/main
+
+#Erase
+
+sudo rm -r ~/.ubunsys/backups/main/*
