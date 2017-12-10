@@ -49,8 +49,10 @@ sudo cp /etc/rc.local ~/.ubunsys/backups/main/rc.local
 
 #Zip all
 test -d ~/.ubunsys/backups/lots || mkdir -p ~/.ubunsys/backups/lots
-sudo zip -r ~/.ubunsys/backups/lots/main_`date +"%Y%m%d_%H%M%S"`.zip ~/.ubunsys/backups/main
+cd ~/.ubunsys/backups
+sudo zip -r ~/.ubunsys/backups/lots/main_`date +"%Y%m%d_%H%M%S"`.zip ./main
+####sudo zip -r ~/.ubunsys/backups/lots/main_`date +"%Y%m%d_%H%M%S"`.zip ~/.ubunsys/backups/main
 
 #Erase
 
-sudo rm -r ~/.ubunsys/backups/main/*
+#sudo rm -r ~/.ubunsys/backups/main/*
