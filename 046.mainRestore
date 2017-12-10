@@ -4,43 +4,47 @@
 
 ####Restore content
 
-echo Executed
-read
+#echo Executed
+#read
+
+
+
 
 ####1.sources.list.d
 
-#test -f ~/.ubunsys/backups/main/sources.list.d || sudo cp -r ~/.ubunsys/backups/main/sources.list.d/* /etc/apt/sources.list.d
+sudo cp -r ~/.ubunsys/backups/main/sources.list.d/* /etc/apt/sources.list.d
 
 
 ####2.sources.list
 
-#test -f ~/.ubunsys/backups/main/sources.list || sudo cp ~/.ubunsys/backups/main/sources.list /etc/apt/sources.list
+sudo cp ~/.ubunsys/backups/main/sources.list /etc/apt/sources.list
 
 ####3.sudoers.d
 
-#test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoers.d/* /etc/sudoers.d
+sudo cp -r ~/.ubunsys/backups/main/sudoers.d/* /etc/sudoers.d
 
 
 ####4.hosts
 
-#test -f ~/.ubunsys/backups/main/hosts || sudo cp ~/.ubunsys/backups/main/hosts /etc/hosts
+sudo cp ~/.ubunsys/backups/main/hosts /etc/hosts
 
 ####5.sudoers
 
-#test -f ~/.ubunsys/backups/main/sudoers || sudo cp ~/.ubunsys/backups/main/sudoers /etc/sudoers 
+sudo cp ~/.ubunsys/backups/main/sudoers /etc/sudoers 
 
 ####6.templates
 
-#test -d ~/.ubunsys/backups/main/Plantillas || cp ~/.ubunsys/backups/main/Plantillas ~/Plantillas/* 2>/dev/null || :
-
-#test -d ~/.ubunsys/backups/main/Templates || cp ~/.ubunsys/backups/main/Templates ~/Templates/* 2>/dev/null || :
-
-
+sudo cp -r ~/.ubunsys/backups/main/Plantillas/* ~/Plantillas/ 2>/dev/null || :
+sudo chown -R $USER ~/Plantillas
+#sudo chmod -R 775 ~/Plantillas
+sudo cp ~/.ubunsys/backups/main/Templates/* ~/Templates/ 2>/dev/null || :
+sudo chown -R $USER ~/Templates
+#sudo chmod -R 775 ~/Templates
 
 ####7.rc.local
 
-#test -f ~/.ubunsys/backups/main/rc.local || sudo cp ~/.ubunsys/backups/main/rc.local /etc/rc.local
+test -f ~/.ubunsys/backups/main/rc.local || sudo cp ~/.ubunsys/backups/main/rc.local /etc/rc.local
 
 #Erase
 
-#sudo rm -r ~/.ubunsys/backups/main/*
+sudo rm -r ~/.ubunsys/backups/main/*

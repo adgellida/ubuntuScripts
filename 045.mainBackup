@@ -55,4 +55,4 @@ sudo zip -r ~/.ubunsys/backups/lots/main_`date +"%Y%m%d_%H%M%S"`.zip ./main
 
 #Erase
 
-#sudo rm -r ~/.ubunsys/backups/main/*
+sudo rm -r ~/.ubunsys/backups/main/*
