@@ -1,5 +1,7 @@
 ﻿#!/bin/bash
 
+####remove to root crontab
+
 #crontab -l -u root | grep -v rdate | crontab -u root -
 #su -i
 #crontab -l -u root | grep -v rdate | crontab -u root -

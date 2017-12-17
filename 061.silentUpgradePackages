@@ -1,5 +1,7 @@
 #!/bin/bash
 
+####silentUpgradePackages
+
 # Script to automatically check for and install updates via apt-get if computer
 #	has been idle for at least an hour
 

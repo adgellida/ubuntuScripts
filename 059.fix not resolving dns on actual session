@@ -1,4 +1,7 @@
-﻿
+﻿#!/bin/bash
+
+####fix not resolving dns on actual session
+
 #sudo dhclient -r interfacename
 #sudo dhclient interfacename
 

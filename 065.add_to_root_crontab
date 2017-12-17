@@ -1,5 +1,7 @@
 #!/bin/bash
 
+####add to root crontab
+
 #write out current crontab
 sudo crontab -l > update
 #echo new cron into cron file
