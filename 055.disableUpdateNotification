@@ -10,3 +10,13 @@ rm ~/.config/autostart/update-notifier.desktop && echo 'Disabled ok'
 
 sudo cp /etc/xdg/autostart/update-notifier.desktop /etc/xdg/autostart-disabled/update-notifier.desktop
 sudo rm /etc/xdg/autostart/update-notifier.desktop && echo 'Disabled ok'
+
+FILE="$HOME/.ubunsys/status/updateNotif.txt"
+if [ -f $FILE ]; then
+   echo "File $FILE exists."
+   echo Disabled > $FILE
+else
+   echo "File $FILE does not exist."
+   touch $FILE
+   echo Disabled > $FILE
+fi
