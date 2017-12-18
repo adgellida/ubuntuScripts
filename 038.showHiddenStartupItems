@@ -3,3 +3,13 @@
 ####showHiddenStartupItems
 
 sudo sed -i "s/NoDisplay=true/NoDisplay=false/g" /etc/xdg/autostart/*.desktop
+
+FILE="$HOME/.ubunsys/status/HiddenStartupItems.txt"
+if [ -f $FILE ]; then
+   echo "File $FILE exists."
+   echo Show > $FILE
+else
+   echo "File $FILE does not exist."
+   touch $FILE
+   echo Show > $FILE
+fi
