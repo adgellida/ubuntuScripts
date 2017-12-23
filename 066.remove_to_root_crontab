@@ -2,6 +2,8 @@
 
 ####remove to root crontab
 
+FILE="$HOME/.ubunsys/status/updateAuto.txt"
+
 #crontab -l -u root | grep -v rdate | crontab -u root -
 #su -i
 #crontab -l -u root | grep -v rdate | crontab -u root -
@@ -16,3 +18,4 @@
 #sed -i '/echo /home/usuario/.ubunsys/downloads/ubuntuScripts-master/062.silentUpdatePackages/d' ./infile
 
 sudo sed --in-place '/062.silentUpdatePackages/d' /var/spool/cron/crontabs/root
+echo Disable > $FILE
