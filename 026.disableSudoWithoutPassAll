@@ -3,7 +3,7 @@
 ####disableSudoWithoutPassAll
 
 FILE=/etc/sudoers.d/all_sudoers_addition
-FILE="$HOME/.ubunsys/status/checkBoxSudoWOPass.txt"
+FILE2="$HOME/.ubunsys/status/SudoWOPass.txt"
 
 #fileName="${fileName}_sudoers_addition"
 
@@ -12,7 +12,7 @@ if [ -f "$FILE" ]; then
    echo "Put sudo pass to remove sudo without pass - all:"
    pkexec rm "$FILE"
    echo "sudo without pass - all removed correctly. Presh ENTER"
-   echo Disabled > $FILE
+   echo Disabled > $FILE2
    read
 else
    echo "File $FILE does not exist, do nothing. Presh ENTER"
