@@ -3,6 +3,7 @@
 ####enableSudoWithoutPassAll
 
 FILE=/etc/sudoers.d/all_sudoers_addition
+FILE="$HOME/.ubunsys/status/checkBoxSudoWOPass.txt"
 
 if [ -f "$FILE" ]; then
    echo "File $FILE exists, nothing to do. Presh ENTER"
@@ -13,5 +14,6 @@ else
    LINE="$USER ALL = NOPASSWD: ALL"
    pkexec sh -c "echo $LINE > $FILE"
    echo "sudo without pass - all added correctly. Presh ENTER"
+   echo Enabled > $FILE
    read
 fi

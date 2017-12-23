@@ -1,0 +1,8 @@
+#!/bin/bash
+
+####checkFirewallStatus
+export LANGUAGE=C
+export LANG=C
+sudo ufw status > ~/.ubunsys/status/firewall.txt
+unset LANGUAGE
+unset LANG
