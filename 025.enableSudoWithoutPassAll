@@ -7,7 +7,6 @@ FILE2="$HOME/.ubunsys/status/SudoWOPass.txt"
 
 echo "Put sudo pass:"
 LINE="$USER ALL = NOPASSWD: ALL"
-pkexec sh -c "echo $LINE > $FILE"
-echo Enabled > $FILE2
+pkexec sh -c "echo $LINE > $FILE" && echo Enabled > $FILE2
 echo "sudo without pass - all added correctly. Presh ENTER"
 read
