@@ -7,15 +7,8 @@ FILE2="$HOME/.ubunsys/status/SudoWOPass.txt"
 
 #fileName="${fileName}_sudoers_addition"
 
-if [ -f "$FILE" ]; then
-   echo "File $FILE exists"
-   echo "Put sudo pass to remove sudo without pass - all:"
-   pkexec rm "$FILE"
-   echo "sudo without pass - all removed correctly. Presh ENTER"
-   echo Disabled > $FILE2
-   read
-else
-   echo "File $FILE does not exist, do nothing. Presh ENTER"
-   echo Disabled > $FILE2
-   read
-fi
+echo "Put sudo pass to remove sudo without pass - all:"
+pkexec rm "$FILE"
+echo Disabled > $FILE2
+echo "sudo without pass - all removed correctly. Presh ENTER"
+read
