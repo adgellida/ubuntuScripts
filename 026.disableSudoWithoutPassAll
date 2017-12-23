@@ -16,5 +16,6 @@ if [ -f "$FILE" ]; then
    read
 else
    echo "File $FILE does not exist, do nothing. Presh ENTER"
+   echo Disabled > $FILE2
    read
 fi
