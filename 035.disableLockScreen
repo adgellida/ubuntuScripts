@@ -7,6 +7,8 @@
 #https://ubuntu-mate.community/t/how-to-disable-keyring-password-storage-for-chrome/2904
 #https://askubuntu.com/questions/867/how-can-i-stop-being-prompted-to-unlock-the-default-keyring-on-boot
 
+FILE="$HOME/.ubunsys/status/LockScreen.txt"
 #gsettings set org.gnome.desktop.screensaver lock-enabled false
 dconf write /org/mate/desktop/lockdown/disable-lock-screen true
 dconf write /org/gnome/desktop/lockdown/disable-lock-screen true
+echo Disable > $FILE

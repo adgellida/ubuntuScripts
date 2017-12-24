@@ -2,6 +2,8 @@
 
 ####Enable hibernation - http://tutorfreebr.blogspot.com.es/2013/10/como-ativar-o-modo-de-hibernacao-no.html - http://www.taringa.net/posts/linux/14651627/Activar-funcion-Hibernar-en-Ubuntu-12-04-Precise-Pangoli.html
 
+FILE="$HOME/.ubunsys/status/hibernation.txt"
+
 sudo sh -c 'echo "
 
 [Re-enable hibernate by default in upower]
@@ -43,3 +45,5 @@ Action=org.freedesktop.login1.hibernate
 ResultActive=yes
 
 " >> /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla'
+
+echo Enable > $FILE
