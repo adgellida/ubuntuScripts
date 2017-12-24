@@ -11,4 +11,4 @@ FILE="$HOME/.ubunsys/status/LockScreen.txt"
 #gsettings set org.gnome.desktop.screensaver lock-enabled false
 dconf write /org/mate/desktop/lockdown/disable-lock-screen true
 dconf write /org/gnome/desktop/lockdown/disable-lock-screen true
-echo Disabled > $FILE
+echo Enabled > $FILE
