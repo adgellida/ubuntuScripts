@@ -8,4 +8,4 @@ sudo rm /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla
 sudo rm /var/lib/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
 sudo rm /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
 
-echo Disabled > $FILE
+echo Enabled > $FILE

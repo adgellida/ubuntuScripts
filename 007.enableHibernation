@@ -46,4 +46,4 @@ ResultActive=yes
 
 " >> /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla'
 
-echo Enabled > $FILE
+echo Disabled > $FILE
