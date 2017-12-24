@@ -3,4 +3,4 @@
 ####disableLoginSound
 FILE="$HOME/.ubunsys/status/loginSound.txt"
 mv /usr/share/sounds/ubuntu/stereo/system-ready.ogg /usr/share/sounds/ubuntu/stereo/system-ready.ogg_ubunsys
-echo Disable > $FILE
+echo Disabled > $FILE

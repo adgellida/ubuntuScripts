@@ -3,4 +3,4 @@
 ####enableLoginSound
 FILE="$HOME/.ubunsys/status/loginSound.txt"
 mv /usr/share/sounds/ubuntu/stereo/system-ready.ogg_ubunsys /usr/share/sounds/ubuntu/stereo/system-ready.ogg
-echo Enable > $FILE
+echo Enabled > $FILE
