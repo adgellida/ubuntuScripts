@@ -4,6 +4,8 @@
 
 FILE="$HOME/.ubunsys/status/hibernation.txt"
 
+sudo rm /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla
+
 sudo sh -c 'echo "
 
 [Disable hibernate (upower)]
