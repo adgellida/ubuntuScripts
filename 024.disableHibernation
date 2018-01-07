@@ -4,8 +4,25 @@
 
 FILE="$HOME/.ubunsys/status/hibernation.txt"
 
-sudo rm /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla
-sudo rm /var/lib/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
-sudo rm /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
+sudo sh -c 'echo "
+
+[Disable hibernate (upower)]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=no
+ResultInactive=no
+ResultAny=no
+
+[Disable hibernate (logind)]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate
+ResultActive=no
+
+[Disable hibernate for all sessions (logind)]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate-multiple-sessions
+ResultActive=no
+
+" >> /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla'
 
 echo Enabled > $FILE

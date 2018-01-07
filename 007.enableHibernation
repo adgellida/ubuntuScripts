@@ -6,44 +6,23 @@ FILE="$HOME/.ubunsys/status/hibernation.txt"
 
 sudo sh -c 'echo "
 
-[Re-enable hibernate by default in upower]
+[Enable hibernate (upower)]
 Identity=unix-user:*
 Action=org.freedesktop.upower.hibernate
 ResultActive=yes
+ResultInactive=yes
+ResultAny=yes
 
-[Re-enable hibernate by default in logind]
+[Enable hibernate (logind)]
 Identity=unix-user:*
 Action=org.freedesktop.login1.hibernate
 ResultActive=yes
 
-" >> /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla'
-
-sudo sh -c 'echo "
-
-[Re-enable hibernate by default in upower]
+[Enable hibernate for all sessions (logind)]
 Identity=unix-user:*
-Action=org.freedesktop.upower.hibernate
+Action=org.freedesktop.login1.hibernate-multiple-sessions
 ResultActive=yes
 
-[Re-enable hibernate by default in logind]
-Identity=unix-user:*
-Action=org.freedesktop.login1.hibernate
-ResultActive=yes
-
-" >> /var/lib/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla'
-
-sudo sh -c 'echo "
-
-[Re-enable hibernate by default in upower]
-Identity=unix-user:*
-Action=org.freedesktop.upower.hibernate
-ResultActive=yes
-
-[Re-enable hibernate by default in logind]
-Identity=unix-user:*
-Action=org.freedesktop.login1.hibernate
-ResultActive=yes
-
-" >> /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla'
+" >> /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla'
 
 echo Disabled > $FILE
