@@ -2,4 +2,4 @@
 
 sudo apt-fast -y remove xrdp vinagre vino
 
-sudo sed -i 's/allowed_user=anybody/allowed_user=console/g' /etc/X11/Xwrapper.config
+sudo sed -i 's/allowed_users=anybody/allowed_users=console/g' /etc/X11/Xwrapper.config
