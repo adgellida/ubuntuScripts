@@ -1,0 +1,9 @@
+﻿#!/bin/bash
+
+sudo apt-fast -y install xrdp vinagre vino
+
+vino-preferences
+
+sudo sed -i 's/allowed_user=console/allowed_user=anybody/g' /etc/X11/Xwrapper.config
+
+/usr/lib/vino/vino-server &
