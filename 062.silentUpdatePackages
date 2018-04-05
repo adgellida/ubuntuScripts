@@ -12,5 +12,7 @@
 	notify-send -t 10000 "sup Checking for updates..."
 	sudo apt-fast -y update
 	sudo apt-fast -y upgrade
+	sudo apt-fast -y dist-upgrade
+	sudo apt-fast -y autoremove
 	notify-send -t 3600000 "sup System updated..."
 #fi
