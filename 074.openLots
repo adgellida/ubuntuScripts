@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####openLots
+
+sudo xdg-open "$HOME/.ubunsys/backups/lots"
