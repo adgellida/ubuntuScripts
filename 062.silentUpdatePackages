@@ -9,10 +9,10 @@
 #idleminimum="3600000";
 
 #if [[ "$idletime" -gt "$idleminimum" ]]; then
-	notify-send -t 10000 "sup Checking for updates..."
+	/usr/bin/notify-send -t 10000 "ubunsys is checking for updates..."
 	sudo apt-fast -y update
 	sudo apt-fast -y upgrade
 	sudo apt-fast -y dist-upgrade
 	sudo apt-fast -y autoremove
-	notify-send -t 3600000 "sup System updated..."
+	/usr/bin/notify-send -t 3600000 "ubunsys updated the system"
 #fi
