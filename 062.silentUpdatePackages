@@ -19,7 +19,7 @@
 
 #eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME mate-session)/environ)";
 
-user=$LOGNAME
+user=root
 
 env_reference_process=$( pgrep -u "$user" mate-session || pgrep -u "$user" xfce4-session || pgrep -u "$user" ciannamon-session || pgrep -u "$user" gnome-session || pgrep -u "$user" gnome-shell || pgrep -u "$user" kdeinit | head -1 )
 
