@@ -1,0 +1,27 @@
+#!/bin/bash
+
+####silentUpdatePackagesMessages
+
+#eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME mate-session)/environ)";
+
+user=$LOGNAME
+
+env_reference_process=$( pgrep -u "$user" mate-session || pgrep -u "$user" xfce4-session || pgrep -u "$user" ciannamon-session || pgrep -u "$user" gnome-session || pgrep -u "$user" gnome-shell || pgrep -u "$user" kdeinit | head -1 )
+
+export DBUS_SESSION_BUS_ADDRESS=$(cat /proc/"$env_reference_process"/environ | grep --null-data ^DBUS_SESSION_BUS_ADDRESS= | sed 's/DBUS_SESSION_BUS_ADDRESS=//')
+
+TERM=xterm
+
+SSH_TTY=/dev/ttyp0
+
+PATH=./:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11
+
+HOME=/etc/stnet
+
+DISPLAY=:0
+
+PWD=/etc/stnet
+
+#/usr/bin/notify-send test
+
+/usr/bin/notify-send -t 10000 "ubunsys is checking for updates and installing if possible.."#!/bin/bash
