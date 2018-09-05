@@ -24,4 +24,4 @@ PWD=/etc/stnet
 
 #/usr/bin/notify-send test
 
-/usr/bin/notify-send -t 10000 "ubunsys is checking for updates and installing if possible.."
+/usr/bin/notify-send -t 10000 "ubunsys is checking for updates and installing if possible..."
