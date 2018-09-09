@@ -9,13 +9,13 @@ FILE="$HOME/.ubunsys/status/updateAuto.txt"
 
 
 #write out current crontab
-crontab -l > update
+#crontab -l > update
 #echo new cron into cron file
-sudo echo "0 * * * * /home/$USER/.ubunsys/downloads/ubuntuScripts-master/075.silentUpdatePackagesMessages" >> update
+#sudo echo "0 * * * * /home/$USER/.ubunsys/downloads/ubuntuScripts-master/075.silentUpdatePackagesMessages" >> update
 #sudo echo "0 * * * * echo test >> /tmp/testing" >> update
 #install new cron file
-crontab update
-rm update
+#crontab update
+#rm update
 #echo Enabled > $FILE
 
 

@@ -18,5 +18,5 @@ FILE="$HOME/.ubunsys/status/updateAuto.txt"
 #sed -i '/echo /home/usuario/.ubunsys/downloads/ubuntuScripts-master/062.silentUpdatePackages/d' ./infile
 
 sudo sed --in-place '/062.silentUpdatePackages/d' /var/spool/cron/crontabs/root
-sudo sed --in-place '/075.silentUpdatePackagesMessages/d' /var/spool/cron/crontabs/$USER
+#sudo sed --in-place '/075.silentUpdatePackagesMessages/d' /var/spool/cron/crontabs/$USER
 echo Disable > $FILE
