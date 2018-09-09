@@ -40,7 +40,7 @@ PWD=/etc/stnet
 #/usr/bin/notify-send test
 
 sudo runuser -l $user -c '/home/$user/.ubunsys/downloads/ubuntuScripts-master/075.silentUpdatePackagesMessages'
-mkdir /home/usuario/Escritorio/test23.txt
+
 #	/usr/bin/notify-send -t 10000 "ubunsys is checking for updates..."
 	sudo apt-fast -y update
 	sudo apt-fast -y upgrade
