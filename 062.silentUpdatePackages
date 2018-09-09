@@ -45,5 +45,6 @@ PWD=/etc/stnet
 	sudo apt-fast -y dist-upgrade
 	sudo apt-fast -y autoremove
 #	/usr/bin/notify-send -t 30000 "ubunsys updated the system if proceed"
-sudo su -c "/home/$user/.ubunsys/downloads/ubuntuScripts-master/076.silentUpdatePackagesMessages2" -s /bin/sh $user
 
+#sudo su -c "/home/$user/.ubunsys/downloads/ubuntuScripts-master/076.silentUpdatePackagesMessages2" -s /bin/sh $user
+runuser -l  $user -c '/home/$user/.ubunsys/downloads/ubuntuScripts-master/076.silentUpdatePackagesMessages2'
