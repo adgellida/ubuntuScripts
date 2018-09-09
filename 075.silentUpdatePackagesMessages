@@ -26,3 +26,10 @@ PWD=/etc/stnet
 
 #/usr/bin/notify-send -t 10000 "ubunsys is checking for updates and installing them if possible..."
 notify-send "ubunsys is checking for updates" "Each hour if some are found will be installed in the background" -i /usr/share/icons/hicolor/256x256/apps/ubunsys.png
+
+while pidof -x "062.silentUpdatePackages" >/dev/null
+do
+    echo "."
+    #sleep 1
+done
+notify-send "ubunsys finished installing updates" "If there were any" -i /usr/share/icons/hicolor/256x256/apps/ubunsys.png
