@@ -32,4 +32,7 @@ do
     echo "."
     #sleep 1
 done
+touch text.txt
+grep installed /var/log/dpkg.log >> text.txt
 notify-send "ubunsys finished installing updates" "If there were any" -i /usr/share/icons/hicolor/256x256/apps/ubunsys.png
+
