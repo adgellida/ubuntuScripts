@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####editGrub
+
+pkexec nano /etc/default/grub
