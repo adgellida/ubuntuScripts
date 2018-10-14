@@ -1,0 +1,6 @@
+#!/bin/bash
+
+####uninstallInfinalityFonts
+sudo apt-get purge fontconfig-infinality
+sudo apt-get install ppa-purge
+sudo ppa-purge ppa:no1wantdthisname/ppa
