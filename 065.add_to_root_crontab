@@ -16,7 +16,7 @@ sudo echo "0 * * * * /home/$USER/.ubunsys/downloads/ubuntuScripts-master/075.sil
 #install new cron file
 crontab update
 rm update
-#echo Enabled > $FILE
+#echo Each hour > $FILE
 
 
 #2.sudo update
@@ -31,4 +31,4 @@ sudo echo "0 * * * * /home/$USER/.ubunsys/downloads/ubuntuScripts-master/062.sil
 #install new cron file
 sudo crontab update
 sudo rm update
-echo Enabled > $FILE
+echo Each hour > $FILE
