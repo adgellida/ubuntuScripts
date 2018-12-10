@@ -16,4 +16,4 @@ sudo echo "@reboot /home/$USER/.ubunsys/downloads/ubuntuScripts-master/062.silen
 #install new cron file
 sudo crontab update
 sudo rm update
-#echo At boot > $FILE
+echo At boot > $FILE
