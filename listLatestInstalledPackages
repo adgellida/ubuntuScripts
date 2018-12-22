@@ -1,4 +1,5 @@
 #!/bin/bash
 less /var/log/dpkg.log | grep " install "
+echo "Ya se han mostrado los últimos paquetes instalados"
 echo "The last installed packages have already been shown"
 read
