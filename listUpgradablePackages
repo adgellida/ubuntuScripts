@@ -2,4 +2,5 @@
 sudo apt -y update
 sudo apt list --upgradable
 echo "Ya se han mostrado los paquetes posibles a actualizar"
+echo "The possible packages to update have already been shown"
 read
