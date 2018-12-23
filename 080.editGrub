@@ -2,4 +2,4 @@
 
 ####editGrub
 
-pkexec nano /etc/default/grub
+sudo -i /etc/default/grub

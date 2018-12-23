@@ -2,4 +2,4 @@
 
 ####openHosts
 
-pkexec nano /etc/hosts
+sudo -i nano /etc/hosts

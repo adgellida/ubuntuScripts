@@ -2,4 +2,4 @@
 
 ####openRCLocal
 
-pkexec nano /etc/rc.local
+sudo -i nano /etc/rc.local

@@ -1,3 +1,3 @@
 ﻿#!/bin/bash
 
-sudo nano /etc/resolv.conf
+sudo -i nano /etc/resolv.conf
