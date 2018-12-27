@@ -4,6 +4,15 @@
 
 # Modify defaults
 
-FILE="$HOME/.ubunsys/configurations/ubunsys.log"
-sudo sed -i 's/env_reset/env_reset,pwfeedback/g' /etc/sudoers
-echo success > $FILE
+sudo sed -i 's/Defaults\tenv_reset/Defaults\tenv_reset,pwfeedback/g' /etc/sudoers
+
+if [ $? -eq 0 ]; then
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "true" WHERE name = "asterisks";
+END_SQL
+
+else
+    echo FAIL
+fi
