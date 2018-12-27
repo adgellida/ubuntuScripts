@@ -4,11 +4,11 @@
 export LANGUAGE=C
 export LANG=C
 OUTPUT="$(sudo ufw status)"
-#echo "${OUTPUT}"
+echo "${OUTPUT}"
 unset LANGUAGE
 unset LANG
 
-if [ ${OUTPUT} -eq "Status: active" ]; then
+if [ "${OUTPUT}" = "Status: active" ]; then
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
@@ -21,3 +21,5 @@ sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 UPDATE config SET status = "Disabled" WHERE name = "firewall";
 END_SQL
 fi
+
+#read
