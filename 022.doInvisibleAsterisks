@@ -4,6 +4,6 @@
 
 # Restore defaults
 
-FILE="$HOME/.ubunsys/status/asterisks.txt"
+FILE="$HOME/.ubunsys/configurations/ubunsys.log"
 sudo sed -i 's/env_reset,pwfeedback/env_reset/g' /etc/sudoers
-echo Disabled > $FILE
+echo success > $FILE

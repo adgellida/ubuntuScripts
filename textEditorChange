@@ -1,0 +1,8 @@
+﻿#!/bin/bash
+
+actualValue=`cat ~/.ubunsys/configurations/actualTextEditor.cfg`
+newValue=`cat ~/.ubunsys/configurations/newTextEditor.cfg`
+#echo "$Actualvalue"
+#read
+cd ~/.ubunsys/downloads/ubuntuScripts-master
+sed -i "s/$actualValue/$newValue/g" *

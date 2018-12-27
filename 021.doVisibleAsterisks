@@ -3,6 +3,7 @@
 #http://www.linuxhispano.net/2013/09/05/mostrar-los-asteriscos-de-la-contrasena-en-un-terminal/
 
 # Modify defaults
-FILE="$HOME/.ubunsys/status/asterisks.txt"
+
+FILE="$HOME/.ubunsys/configurations/ubunsys.log"
 sudo sed -i 's/env_reset/env_reset,pwfeedback/g' /etc/sudoers
-echo Enabled > $FILE
+echo success > $FILE
