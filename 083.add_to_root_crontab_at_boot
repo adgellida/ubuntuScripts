@@ -1,19 +1,27 @@
 #!/bin/bash
 
-####add to root crontab
-
-FILE="$HOME/.ubunsys/status/updateAuto.txt"
+####add to root crontab at boot
 
 #1.user messages
 
 
 
 #write out current crontab
-crontab -l > update
+crontab -l > update &&
 #echo new cron into cron file
-sudo echo "@reboot /home/$USER/.ubunsys/downloads/ubuntuScripts-master/062.silentUpdatePackages" >> update
+sudo echo "@reboot /home/$USER/.ubunsys/downloads/ubuntuScripts-master/062.silentUpdatePackages" >> update &&
 #sudo echo "0 * * * * echo test >> /tmp/testing" >> update
 #install new cron file
-sudo crontab update
+sudo crontab update &&
 sudo rm update
-echo At boot > $FILE
+
+if [ $? -eq 0 ]; then
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "At boot" WHERE name = "updateAuto";
+END_SQL
+
+else
+    echo FAIL
+fi

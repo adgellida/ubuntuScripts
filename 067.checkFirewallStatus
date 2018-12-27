@@ -3,6 +3,21 @@
 ####checkFirewallStatus
 export LANGUAGE=C
 export LANG=C
-sudo ufw status > ~/.ubunsys/status/firewall.txt
+OUTPUT="$(sudo ufw status)"
+#echo "${OUTPUT}"
 unset LANGUAGE
 unset LANG
+
+if [ ${OUTPUT} -eq "Status: active" ]; then
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "Enabled" WHERE name = "firewall";
+END_SQL
+
+else
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "Disabled" WHERE name = "firewall";
+END_SQL
+fi

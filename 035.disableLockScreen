@@ -15,7 +15,7 @@ if [ $? -eq 0 ]; then
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "false" WHERE name = "LockScreen";
+UPDATE config SET status = "false" WHERE name = "lockScreen";
 END_SQL
 
 else

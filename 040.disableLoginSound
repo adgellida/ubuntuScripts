@@ -1,6 +1,16 @@
 #!/bin/bash
 
 ####disableLoginSound
-FILE="$HOME/.ubunsys/status/loginSound.txt"
+
 mv /usr/share/sounds/ubuntu/stereo/system-ready.ogg /usr/share/sounds/ubuntu/stereo/system-ready.ogg_ubunsys
-echo Disabled > $FILE
+
+if [ $? -eq 0 ]; then
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "false" WHERE name = "loginSound";
+END_SQL
+
+else
+    echo FAIL
+fi

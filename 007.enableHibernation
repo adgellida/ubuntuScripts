@@ -2,9 +2,7 @@
 
 ####Enable hibernation - http://tutorfreebr.blogspot.com.es/2013/10/como-ativar-o-modo-de-hibernacao-no.html - http://www.taringa.net/posts/linux/14651627/Activar-funcion-Hibernar-en-Ubuntu-12-04-Precise-Pangoli.html
 
-FILE="$HOME/.ubunsys/status/hibernation.txt"
-
-sudo rm /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla
+sudo rm /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla &&
 
 sudo sh -c 'echo "
 
@@ -27,4 +25,13 @@ ResultActive=yes
 
 " >> /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla'
 
-echo Disabled > $FILE
+if [ $? -eq 0 ]; then
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "true" WHERE name = "hibernation";
+END_SQL
+
+else
+    echo FAIL
+fi

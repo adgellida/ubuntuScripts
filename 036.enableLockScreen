@@ -7,8 +7,17 @@
 #https://ubuntu-mate.community/t/how-to-disable-keyring-password-storage-for-chrome/2904
 #https://askubuntu.com/questions/867/how-can-i-stop-being-prompted-to-unlock-the-default-keyring-on-boot
 
-FILE="$HOME/.ubunsys/status/LockScreen.txt"
 #gsettings set org.gnome.desktop.screensaver lock-enabled false
-dconf write /org/mate/desktop/lockdown/disable-lock-screen false
+dconf write /org/mate/desktop/lockdown/disable-lock-screen false &&
 dconf write /org/gnome/desktop/lockdown/disable-lock-screen false
-echo Enabled > $FILE
+
+if [ $? -eq 0 ]; then
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "true" WHERE name = "lockScreen";
+END_SQL
+
+else
+    echo FAIL
+fi

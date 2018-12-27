@@ -2,21 +2,16 @@
 
 ####remove to root crontab
 
-FILE="$HOME/.ubunsys/status/updateAuto.txt"
-
-#crontab -l -u root | grep -v rdate | crontab -u root -
-#su -i
-#crontab -l -u root | grep -v rdate | crontab -u root -
-#sudo crontab -l | grep -v rdate | sudo crontab -
-
-#crontab -l | awk '{print} END {print "* * * * * echo test >> /tmp/testing"}' | crontab 
- 
-#sudo crontab -l | sed '\!echo test >> /tmp/testing!d' | sudo crontab
-
-#sudo crontab -l | sed '\!echo /home/$USER/.ubunsys/downloads/ubuntuScripts-master/062.silentUpdatePackages >> /tmp/testing!d' | sudo crontab
-
-#sed -i '/echo /home/usuario/.ubunsys/downloads/ubuntuScripts-master/062.silentUpdatePackages/d' ./infile
-
-sudo sed --in-place '/062.silentUpdatePackages/d' /var/spool/cron/crontabs/root
+sudo sed --in-place '/062.silentUpdatePackages/d' /var/spool/cron/crontabs/root &&
 sudo sed --in-place '/075.silentUpdatePackagesMessages/d' /var/spool/cron/crontabs/$USER
-echo Disabled > $FILE
+
+if [ $? -eq 0 ]; then
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "Disabled" WHERE name = "updateAuto";
+END_SQL
+
+else
+    echo FAIL
+fi
