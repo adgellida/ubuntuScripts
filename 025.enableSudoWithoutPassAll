@@ -3,10 +3,21 @@
 ####enableSudoWithoutPassAll
 
 FILE=/etc/sudoers.d/all_sudoers_addition
-FILE2="$HOME/.ubunsys/status/SudoWOPass.txt"
 
 echo "Put sudo pass:"
 LINE="$USER ALL = NOPASSWD: ALL"
-pkexec sh -c "echo $LINE > $FILE" && echo Enabled > $FILE2
+pkexec sh -c "echo $LINE > $FILE"
+
+if [ $? -eq 0 ]; then
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "Enabled" WHERE name = "sudoWOPass";
+END_SQL
+
 echo "sudo without pass - all added correctly. Presh ENTER"
 read
+
+else
+    echo FAIL
+fi
