@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#Force fsck on boot using /forcefsck
+#https://www.cyberciti.biz/faq/linux-force-fsck-on-the-next-reboot-or-boot-sequence/
+#https://linuxconfig.org/how-to-force-fsck-to-check-filesystem-after-system-reboot-on-linux
+
+#sudo su
+#cd /
+#sudo touch /forcefsck
+#sudo reboot &
+
+sudo fdisk -l
+sudo tune2fs -c 1 /dev/sda2
+#sudo tune2fs -c 1 /dev/sdb2
+sudo shutdown -r now &
+##sudo tune2fs -l /dev/sda2 | grep Last\ c 			#The following linux command will tell as when was the last time the filesystem /dev/sdX was checked
+##sudo tune2fs -l /dev/sdb2 | grep Last\ c
+
+
+alternatively we can set fsck to check filesystem after every 5 reboots:
+sudo tune2fs -c 100 /dev/sdb2
