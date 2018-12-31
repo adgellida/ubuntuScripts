@@ -20,7 +20,10 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Highly compatible with 17.04 (Zesty).
+** There are currently 2 branches of development:**
+
+* [master](https://github.com/adgellida/ubuntuScripts/tree/master) - This branch stays frozen, includes the most stable version. Due that next version will be so different internally is better to create a new and perform several tests to pass it to this branch.
+* [dev](https://github.com/adgellida/ubuntuScripts/tree/dev) - This branch is in development when there is free time. The next version will be published in this branch.
 
 **Used on [ubunsys](https://github.com/adgellida/ubunsys)**
 
