@@ -1,6 +1,6 @@
 #!/bin/bash
 
-####enableUpdateNotification
+####enableOfficialUpdateNotification
 
 test -d ~/.config/autostart-disabled || mkdir -p ~/.config/autostart-disabled
 sudo test -d /etc/xdg/autostart-disabled || sudo mkdir -p /etc/xdg/autostart-disabled
