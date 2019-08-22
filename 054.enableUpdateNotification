@@ -11,12 +11,7 @@ rm ~/.config/autostart-disabled/update-notifier.desktop && echo 'Enabled ok'
 sudo cp /etc/xdg/autostart-disabled/update-notifier.desktop /etc/xdg/autostart/update-notifier.desktop
 sudo rm /etc/xdg/autostart-disabled/update-notifier.desktop && echo 'Enabled ok'
 
-FILE="$HOME/.ubunsys/status/updateNotif.txt"
-if [ -f $FILE ]; then
-   echo "File $FILE exists."
-   echo Enabled > $FILE
-else
-   echo "File $FILE does not exist."
-   touch $FILE
-   echo Enabled > $FILE
-fi
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "Enabled" WHERE name = "apt-fastInstalled";
+END_SQL
