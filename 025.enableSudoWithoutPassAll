@@ -6,9 +6,9 @@ FILE=/etc/sudoers.d/all_sudoers_addition
 
 echo "Put sudo pass:"
 LINE="$USER ALL = NOPASSWD: ALL"
-pkexec sh -c "echo $LINE > $FILE"
+sudo sh -c "echo $LINE > $FILE"
 
-sudo sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "Enabled" WHERE name = "sudoWOPass";
 END_SQL
