@@ -13,5 +13,5 @@ sudo rm /etc/xdg/autostart-disabled/update-notifier.desktop && echo 'Enabled ok'
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "Enabled" WHERE name = "officialUpdateNotificationStatus";
+UPDATE config SET status = "Enabled" WHERE name = "officialUpdateNotification";
 END_SQL
