@@ -4,13 +4,7 @@
 
 mv /usr/share/sounds/ubuntu/stereo/system-ready.ogg_ubunsys /usr/share/sounds/ubuntu/stereo/system-ready.ogg
 
-if [ $? -eq 0 ]; then
-
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "Enabled" WHERE name = "loginSound";
 END_SQL
-
-else
-    echo FAIL
-fi
