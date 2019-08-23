@@ -11,13 +11,7 @@
 dconf write /org/mate/desktop/lockdown/disable-lock-screen false &&
 dconf write /org/gnome/desktop/lockdown/disable-lock-screen false
 
-if [ $? -eq 0 ]; then
-
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "true" WHERE name = "lockScreen";
+UPDATE config SET status = "Enabled" WHERE name = "lockScreen";
 END_SQL
-
-else
-    echo FAIL
-fi
