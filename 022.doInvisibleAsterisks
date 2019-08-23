@@ -6,13 +6,9 @@
 
 sudo sed -i 's/Defaults\tenv_reset,pwfeedback/Defaults\tenv_reset/g' /etc/sudoers
 
-if [ $? -eq 0 ]; then
+&&
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "false" WHERE name = "asterisks";
 END_SQL
-
-else
-    echo FAIL
-fi
