@@ -4,9 +4,7 @@
 
 # Modify defaults
 
-sudo sed -i 's/Defaults\tenv_reset/Defaults\tenv_reset,pwfeedback/g' /etc/sudoers
-
-&&
+sudo sed -i 's/Defaults\tenv_reset/Defaults\tenv_reset,pwfeedback/g' /etc/sudoers &&
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
