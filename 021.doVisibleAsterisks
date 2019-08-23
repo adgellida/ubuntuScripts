@@ -8,5 +8,5 @@ sudo sed -i 's/Defaults\tenv_reset/Defaults\tenv_reset,pwfeedback/g' /etc/sudoer
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "true" WHERE name = "asterisks";
+UPDATE config SET status = "Enabled" WHERE name = "asterisks";
 END_SQL
