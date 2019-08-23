@@ -25,13 +25,7 @@ ResultActive=yes
 
 " >> /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla'
 
-if [ $? -eq 0 ]; then
-
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "true" WHERE name = "hibernation";
+UPDATE config SET status = "Enabled" WHERE name = "hibernation";
 END_SQL
-
-else
-    echo FAIL
-fi
