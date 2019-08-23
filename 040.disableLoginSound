@@ -8,7 +8,7 @@ if [ $? -eq 0 ]; then
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "false" WHERE name = "loginSound";
+UPDATE config SET status = "Disabled" WHERE name = "loginSound";
 END_SQL
 
 else
