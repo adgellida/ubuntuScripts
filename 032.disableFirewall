@@ -3,3 +3,8 @@
 ####disableFirewall
 
 sudo ufw disable
+
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "Disabled" WHERE name = "firewall";
+END_SQL
