@@ -2,14 +2,9 @@
 
 ####unshowHiddenStartupItems
 
-sudo sed –i "s/NoDisplay=false/NoDisplay=true/g" /etc/xdg/autostart/*.desktop
+sudo sed -i "s/NoDisplay=false/NoDisplay=true/g" /etc/xdg/autostart/*.desktop
 
-FILE="$HOME/.ubunsys/status/HiddenStartupItems.txt"
-if [ -f $FILE ]; then
-   echo "File $FILE exists."
-   echo unShow > $FILE
-else
-   echo "File $FILE does not exist."
-   touch $FILE
-   echo unShow > $FILE
-fi
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+.timeout 2000
+UPDATE config SET status = "Disabled" WHERE name = "HideStartupItems";
+END_SQL
