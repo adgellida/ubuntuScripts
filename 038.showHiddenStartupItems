@@ -6,5 +6,5 @@ sudo sed -i "s/NoDisplay=true/NoDisplay=false/g" /etc/xdg/autostart/*.desktop
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "Enabled" WHERE name = "HideStartupItems";
+UPDATE config SET status = "Enabled" WHERE name = "hideStartupItems";
 END_SQL
