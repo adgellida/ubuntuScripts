@@ -4,7 +4,7 @@
 export LANGUAGE=C
 export LANG=C
 OUTPUT="$(sudo ufw status)"
-echo "${OUTPUT}"
+#echo "${OUTPUT}"
 unset LANGUAGE
 unset LANG
 
