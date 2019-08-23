@@ -7,8 +7,6 @@ FILE=/etc/sudoers.d/all_sudoers_addition
 echo "Put sudo pass to remove sudo without pass - all:"
 pkexec rm "$FILE"
 
-if [ $? -eq 0 ]; then
-
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "Disabled" WHERE name = "sudoWOPass";
@@ -16,7 +14,3 @@ END_SQL
 
 echo "sudo without pass - all removed correctly. Presh ENTER"
 read
-
-else
-    echo FAIL
-fi
