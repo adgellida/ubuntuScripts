@@ -9,8 +9,9 @@ read value
 if [ "$value" = "1" ]
 then
 	sudo timedatectl set-local-rtc 1 --adjust-system-clock
-	echo "Configured OK. Now UTC like Windows OS. Pros: No desyncronization in hour by dual boot"
+	echo "Configured OK. Now RTC like Windows OS."
+	echo "Pros: No desyncronization in hour by dual boot"
 else
 	sudo timedatectl set-local-rtc 0 --adjust-system-clock
-	echo "Default values saved. Now RTC."
+	echo "Default values saved. Now UTC."
 fi
