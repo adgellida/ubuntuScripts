@@ -1,3 +1,14 @@
 #!/bin/bash
 
-sudo sed -i 's/UTC=yes/UTC=no/' /etc/default/rcS
+echo "To convert Linux to 'Windows Format UTC' put 1 and Enter"
+echo "If you want to revert to default RTC put 2"
+read value
+
+if [ "$value" = "1" ]
+then
+	sudo sed -i 's/UTC=yes/UTC=no/' /etc/default/rcS
+	echo "Configured OK. Now UTC like Windows OS. Pros: No desyncronization in hour by dual boot"
+else
+	sudo sed -i 's/UTC=no/UTC=yes/' /etc/default/rcS
+	echo "Default values saved. Now RTC."
+fi
