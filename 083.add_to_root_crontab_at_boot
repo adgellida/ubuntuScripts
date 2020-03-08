@@ -9,7 +9,7 @@
 #write out current crontab
 crontab -l > update &&
 #echo new cron into cron file
-sudo echo "@reboot /home/$USER/.ubunsys/downloads/ubuntuScripts-master/062.silentUpdatePackages" >> update &&
+sudo echo "@reboot /home/$USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUpdatePackages" >> update &&
 #sudo echo "0 * * * * echo test >> /tmp/testing" >> update
 #install new cron file
 sudo crontab update &&
