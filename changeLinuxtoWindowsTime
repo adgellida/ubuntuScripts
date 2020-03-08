@@ -1,3 +1,14 @@
 #!/bin/bash
 
-sudo timedatectl set-local-rtc 1 --adjust-system-clock
+echo "To convert Linux to 'Windows Format UTC' put 1 and Enter"
+echo "If you want to revert to default RTC put 2"
+read value
+
+if [ "$value" = "1" ]
+then
+	sudo timedatectl set-local-rtc 1 --adjust-system-clock
+	echo "Configured OK. Now UTC like Windows OS. Pros: No desyncronization in hour by dual boot"
+else
+	sudo timedatectl set-local-rtc 0 --adjust-system-clock
+	echo "Default values saved. Now RTC."
+fi
