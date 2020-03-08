@@ -15,13 +15,7 @@ sudo echo "@reboot /home/$USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUp
 sudo crontab update &&
 sudo rm update
 
-if [ $? -eq 0 ]; then
-
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "At boot" WHERE name = "updateAuto";
 END_SQL
-
-else
-    echo FAIL
-fi

@@ -5,13 +5,7 @@
 sudo sed --in-place '/062.silentUpdatePackages/d' /var/spool/cron/crontabs/root &&
 sudo sed --in-place '/075.silentUpdatePackagesMessages/d' /var/spool/cron/crontabs/$USER
 
-if [ $? -eq 0 ]; then
-
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "Disabled" WHERE name = "updateAuto";
 END_SQL
-
-else
-    echo FAIL
-fi
