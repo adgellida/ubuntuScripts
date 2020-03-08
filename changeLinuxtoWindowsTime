@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "To convert Linux to 'Windows Format UTC' put 1 and Enter"
-echo "If you want to revert to default RTC put 2"
+echo "To convert Linux to RTC (Windows Format) push 1 and Enter"
+
+echo "If you want to revert to default UTC push 2"
+
 read value
 
 if [ "$value" = "1" ]
