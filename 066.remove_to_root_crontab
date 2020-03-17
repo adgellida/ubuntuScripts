@@ -4,6 +4,7 @@
 
 sudo sed --in-place '/062.silentUpdatePackages/d' /etc/crontab &&
 sudo sed --in-place '/075.silentUpdatePackagesMessages/d' /etc/crontab
+sudo rm /etc/cron.hourly/ubunsys-packages-update
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000

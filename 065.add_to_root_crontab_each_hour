@@ -2,11 +2,11 @@
 
 ####add to root crontab each hour
 
-touch /etc/cron.hourly/ubunsys-packages-update
-echo "#!/bin/bash" >> /etc/cron.hourly/ubunsys-packages-update
-echo "" >> /etc/cron.hourly/ubunsys-packages-update
-echo "/home/$USER/.ubunsys/downloads/ubuntuScripts-dev/075.silentUpdatePackagesMessages" >> /etc/cron.hourly/ubunsys-packages-update
-echo "/home/$USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUpdatePackages" >> /etc/cron.hourly/ubunsys-packages-update
+sudo touch /etc/cron.hourly/ubunsys-packages-update
+sudo echo "#!/bin/bash" >> /etc/cron.hourly/ubunsys-packages-update
+sudo echo "" >> /etc/cron.hourly/ubunsys-packages-update
+sudo echo "/home/$USER/.ubunsys/downloads/ubuntuScripts-dev/075.silentUpdatePackagesMessages" >> /etc/cron.hourly/ubunsys-packages-update
+sudo echo "/home/$USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUpdatePackages" >> /etc/cron.hourly/ubunsys-packages-update
 sudo chmod 755 /etc/cron.hourly/ubunsys-packages-update
 sudo chown root /etc/cron.hourly/ubunsys-packages-update
 
