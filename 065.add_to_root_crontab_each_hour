@@ -15,5 +15,3 @@ sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "Eacho hour" WHERE name = "updateAuto";
 END_SQL
-
-read
