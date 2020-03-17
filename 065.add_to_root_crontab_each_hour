@@ -10,7 +10,7 @@ echo "/home/$USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUpdatePackages"
 sudo chmod 755 /etc/cron.hourly/ubunsys-packages-update
 sudo chown root /etc/cron.hourly/ubunsys-packages-update
 
-sqlite3 /home/$SUDO_USER/.ubunsys/configurations/config.db <<END_SQL
+sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "Eacho hour" WHERE name = "updateAuto";
 END_SQL
