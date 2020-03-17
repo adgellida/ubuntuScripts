@@ -2,35 +2,15 @@
 
 ####add to root crontab each hour
 
-#1.user messages
+touch /etc/cron.hourly/ubunsys-packages-update
+echo "#!/bin/bash" >> /etc/cron.hourly/ubunsys-packages-update
+echo "" >> /etc/cron.hourly/ubunsys-packages-update
+echo "/home/$USER/.ubunsys/downloads/ubuntuScripts-dev/075.silentUpdatePackagesMessages" >> /etc/cron.hourly/ubunsys-packages-update
+echo "/home/$USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUpdatePackages" >> /etc/cron.hourly/ubunsys-packages-update
+sudo chmod 755 /etc/cron.hourly/ubunsys-packages-update
+sudo chown root /etc/cron.hourly/ubunsys-packages-update
 
-
-
-#write out current crontab
-crontab -l > update &&
-#echo new cron into cron file
-sudo echo "0 * * * * /home/$USER/.ubunsys/downloads/ubuntuScripts-dev/075.silentUpdatePackagesMessages" >> update &&
-#sudo echo "0 * * * * echo test >> /tmp/testing" >> update
-#install new cron file
-crontab update &&
-rm update &&
-
-
-
-#2.sudo update
-
-
-
-#write out current crontab
-sudo crontab -l > update &&
-#echo new cron into cron file
-sudo echo "0 * * * * /home/$USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUpdatePackages" >> update &&
-#sudo echo "0 * * * * echo test >> /tmp/testing" >> update
-#install new cron file
-sudo crontab update &&
-sudo rm update
-
-sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+sqlite3 /home/$SUDO_USER/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
-UPDATE config SET status = "Each hour" WHERE name = "updateAuto";
+UPDATE config SET status = "Eacho hour" WHERE name = "updateAuto";
 END_SQL

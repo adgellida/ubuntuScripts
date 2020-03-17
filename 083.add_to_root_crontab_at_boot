@@ -2,20 +2,10 @@
 
 ####add to root crontab at boot
 
-#1.user messages
+sudo echo "@reboot /home/$SUDO_USER/.ubunsys/downloads/ubuntuScripts-dev/075.silentUpdatePackagesMessages" >> /etc/crontab
+sudo echo "@reboot /home/$SUDO_USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUpdatePackages" >> /etc/crontab
 
-
-
-#write out current crontab
-crontab -l > update &&
-#echo new cron into cron file
-sudo echo "@reboot /home/$USER/.ubunsys/downloads/ubuntuScripts-dev/062.silentUpdatePackages" >> update &&
-#sudo echo "0 * * * * echo test >> /tmp/testing" >> update
-#install new cron file
-sudo crontab update &&
-sudo rm update
-
-sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
+sqlite3 /home/$SUDO_USER/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
 UPDATE config SET status = "At boot" WHERE name = "updateAuto";
 END_SQL
