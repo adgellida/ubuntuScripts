@@ -4,6 +4,8 @@
 
 # Restore defaults
 
+echo "do invisible"
+
 sudo sed -i 's/Defaults\tenv_reset,pwfeedback/Defaults\tenv_reset/g' /etc/sudoers &&
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
