@@ -1,0 +1,6 @@
+﻿#!/bin/bash
+
+sudo rm -f /var/lib/dpkg/lock
+sudo dpkg --configure -a
+
+pause
