@@ -15,6 +15,6 @@ read USER
 
 FILE=/etc/lightdm/lightdm.conf
 
-sudo sed -i "/autologin-user=/ s/$/$USER/" $FILE
+sudo sed "s/autologin-user=.*/autologin-user=$USER/g" $FILE
 
 read
