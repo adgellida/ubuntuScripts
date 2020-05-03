@@ -13,11 +13,14 @@ echo ""
 
 read USER
 
+echo ""
+
 FILE=/etc/lightdm/lightdm.conf
 
 sudo sed "s/autologin-user=.*/autologin-user=$USER/g" $FILE
 
 echo ""
-echo "This is the output of the file " + $FILE + " .You can now exit"
+echo "This is the output of the file $FILE"
+echo "You can exit now"
 
 read
