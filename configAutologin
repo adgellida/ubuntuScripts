@@ -4,6 +4,10 @@
 
 echo "Put the name/s of the user/s to auto-login preceding a blank space. user1 user2..."
 echo ""
+echo "Example: carl"
+echo ""
+echo "Example: carl marie"
+echo ""
 echo "If you put only blank space, always will ask for pass for all users"
 read USER
 
