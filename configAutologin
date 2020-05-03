@@ -9,9 +9,12 @@ echo ""
 echo "Example2: carl marie"
 echo ""
 echo "If you put only blank space, always will ask for pass for all users"
+echo ""
 
 read USER
 
 FILE=/etc/lightdm/lightdm.conf
 
 sudo sed "/autologin-user=/ s/$/$USER/" $FILE
+
+read
