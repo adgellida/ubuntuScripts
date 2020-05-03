@@ -1,6 +1,6 @@
 #!/bin/bash
 
-####configPassword
+####configAutologin
 
 echo "Put the name/s of the user/s to auto-login preceding a blank space. user1 user2..."
 echo ""
