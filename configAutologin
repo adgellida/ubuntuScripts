@@ -2,11 +2,11 @@
 
 ####configAutologin
 
-echo "Put the name/s of the user/s to auto-login preceding a blank space. user1 user2..."
+echo "Put the name/s of the user/s to auto-login preceding a blank space."
 echo ""
-echo "Example: carl"
+echo "Example1: carl"
 echo ""
-echo "Example: carl marie"
+echo "Example2: carl marie"
 echo ""
 echo "If you put only blank space, always will ask for pass for all users"
 read USER
