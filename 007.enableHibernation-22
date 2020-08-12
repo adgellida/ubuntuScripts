@@ -2,28 +2,21 @@
 
 ####Enable hibernation - http://tutorfreebr.blogspot.com.es/2013/10/como-ativar-o-modo-de-hibernacao-no.html - http://www.taringa.net/posts/linux/14651627/Activar-funcion-Hibernar-en-Ubuntu-12-04-Precise-Pangoli.html
 
-sudo rm /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla
+sudo rm /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla &&
 
 sudo sh -c 'echo "
 
-[Enable hibernate (upower)]
+[Re-enable hibernate by default in upower]
 Identity=unix-user:*
 Action=org.freedesktop.upower.hibernate
 ResultActive=yes
-ResultInactive=yes
-ResultAny=yes
 
-[Enable hibernate (logind)]
+[Re-enable hibernate by default in logind]
 Identity=unix-user:*
-Action=org.freedesktop.login1.hibernate
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
 ResultActive=yes
 
-[Enable hibernate for all sessions (logind)]
-Identity=unix-user:*
-Action=org.freedesktop.login1.hibernate-multiple-sessions
-ResultActive=yes
-
-" >> /etc/polkit-1/localauthority/90-mandatory.d/com.ubuntu.desktop.pkla'
+" >> /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla'
 
 sqlite3 ~/.ubunsys/configurations/config.db <<END_SQL
 .timeout 2000
