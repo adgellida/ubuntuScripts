@@ -2,7 +2,7 @@
 
 ####Enable hibernation - http://tutorfreebr.blogspot.com.es/2013/10/como-ativar-o-modo-de-hibernacao-no.html - http://www.taringa.net/posts/linux/14651627/Activar-funcion-Hibernar-en-Ubuntu-12-04-Precise-Pangoli.html
 
-sudo rm /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla &&
+sudo rm /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
 
 sudo sh -c 'echo "
 
