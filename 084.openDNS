@@ -1,0 +1,8 @@
+#!/bin/bash
+
+####openDNS
+
+sudo apt-fast -y install resolvconf
+sudo systemctl enable resolvconf.service
+sudo systemctl start resolvconf.service
+sudo xdg-open /etc/resolvconf/resolv.conf.d/head

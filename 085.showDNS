@@ -1,0 +1,5 @@
+#!/bin/bash
+
+####showDNS
+
+sudo xdg-open /etc/resolv.conf
