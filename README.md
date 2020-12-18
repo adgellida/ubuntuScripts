@@ -18,9 +18,7 @@ A collection of ubuntu scripts to fix problems and add functionalities.
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
-
-Highly compatible with 17.04 (Zesty).
+Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu...
 
 **Used on [ubunsys](https://github.com/adgellida/ubunsys)**
 
